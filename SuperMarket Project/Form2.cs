@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace SuperMarket_Project
 {
-    public partial class Form2 : Form
     public partial class Form2: Form
     {
         public Form2()
