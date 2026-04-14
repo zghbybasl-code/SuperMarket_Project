@@ -21,15 +21,18 @@ namespace SuperMarket_Project
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text)) {
-
-
+            if (string.IsNullOrWhiteSpace(textBox1.Text )|| string.IsNullOrWhiteSpace(textBox2.Text)){
+             
+            
                 MessageBox.Show("Error please Enter a Name or Password");
 
 
             }
             else if (textBox1.Text == "Basil" && textBox2.Text == "225104208")
+            else if (textBox1.Text=="Basil" && textBox2.Text=="225104208")
             {
                 Form2 f3 = new Form2();
+               Form2 f3=new Form2();
                 f3.Show();
                 this.Hide();
 
