@@ -10,13 +10,40 @@ using System.Windows.Forms;
 
 namespace SuperMarket_Project
 {
-    public partial class Form2: Form
+    public partial class Market: Form
     {
-        public Form2()
+        public Market()
         {
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Order f1 = new Order();
+            f1.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Customer f2= new Customer();
+            f2.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Products f1= new Products();
+            f1.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Inventory f6= new Inventory();
+            f6.Show();
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SuperMarket_Project
 {
-    public partial class Form3 : Form
+    public partial class Form6 : Form
     {
-        public Form3()
+        public Form6()
         {
             InitializeComponent();
         }

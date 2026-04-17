@@ -93,6 +93,27 @@ namespace SuperMarket_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_a_supermarket_shelf_filled_with_colorful_rows_of_various_products_including_image_17215282 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-a-supermarket-shelf-filled-with-colorful-rows-of-various-products-includi" +
+                        "ng-image_17215282", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_cartoon_supermarket_shelf_element_png_image_4068780 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-cartoon-supermarket-shelf-element-png-image_4068780", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_cartoonized_urban_supermarket_front_a_facade_of_a_store_vector_png_image_45981058 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-cartoonized-urban-supermarket-front-a-facade-of-a-store-vector-png-image_" +

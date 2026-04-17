@@ -41,17 +41,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(499, 108);
+            this.label1.Location = new System.Drawing.Point(51, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserName";
+        
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(505, 172);
+            this.label2.Location = new System.Drawing.Point(51, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 1;
@@ -59,9 +60,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(602, 282);
+            this.button1.Location = new System.Drawing.Point(141, 266);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 69);
             this.button1.TabIndex = 2;
@@ -71,7 +72,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(614, 96);
+            this.textBox1.Location = new System.Drawing.Point(155, 96);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(208, 32);
@@ -79,7 +80,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(614, 163);
+            this.textBox2.Location = new System.Drawing.Point(155, 163);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(208, 29);
@@ -88,10 +89,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Lucida Handwriting", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(495, 9);
+            this.label3.Location = new System.Drawing.Point(47, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(353, 43);
             this.label3.TabIndex = 5;
@@ -102,11 +103,11 @@
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.BackgroundImage = global::SuperMarket_Project.Properties.Resources.pngtree_cartoonized_urban_supermarket_front_a_facade_of_a_store_vector_png_image_45981058;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(1, 4);
+            this.panel1.Location = new System.Drawing.Point(455, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(448, 448);
+            this.panel1.Size = new System.Drawing.Size(477, 457);
             this.panel1.TabIndex = 6;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+         
             // 
             // Form1
             // 

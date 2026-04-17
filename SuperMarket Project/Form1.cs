@@ -28,7 +28,7 @@ namespace SuperMarket_Project
                 {
 
 
-                    MessageBox.Show("Error please Enter a Name or Password");
+                    MessageBox.Show("Please enter all Fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
 
 
                 }
@@ -37,7 +37,7 @@ namespace SuperMarket_Project
                     
                 {
 
-                    Form2 f3 = new Form2();
+                    Market f3 = new Market();
                     f3.Show();
                     this.Hide();
 
@@ -46,7 +46,7 @@ namespace SuperMarket_Project
 
                 else if (textBox1.Text == "Ahmed" && textBox2.Text == "225100182")
                 {
-                    Form2 f2 = new Form2();
+                    Market f2 = new Market();
                     f2.Show();
                     this.Hide();
 
@@ -64,10 +64,7 @@ namespace SuperMarket_Project
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
     }
 }
         
