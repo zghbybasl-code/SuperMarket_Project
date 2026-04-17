@@ -36,6 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +46,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(15, 36);
+            this.button1.Location = new System.Drawing.Point(14, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 53);
             this.button1.TabIndex = 0;
@@ -55,9 +57,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(15, 209);
+            this.button2.Location = new System.Drawing.Point(15, 171);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 55);
+            this.button2.Size = new System.Drawing.Size(160, 55);
             this.button2.TabIndex = 1;
             this.button2.Text = "Products";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,9 +68,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(15, 301);
+            this.button3.Location = new System.Drawing.Point(15, 247);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(163, 58);
+            this.button3.Size = new System.Drawing.Size(160, 61);
             this.button3.TabIndex = 2;
             this.button3.Text = "Inventory";
             this.button3.UseVisualStyleBackColor = true;
@@ -77,7 +79,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(15, 117);
+            this.button4.Location = new System.Drawing.Point(14, 88);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(161, 54);
             this.button4.TabIndex = 3;
@@ -117,6 +119,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
@@ -125,6 +129,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 488);
             this.panel2.TabIndex = 6;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(15, 333);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 51);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Dachboard";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(15, 404);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(160, 50);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Support";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Market
             // 
@@ -154,5 +180,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
     }
 }

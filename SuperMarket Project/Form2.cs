@@ -45,5 +45,17 @@ namespace SuperMarket_Project
             Inventory f6= new Inventory();
             f6.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Dachboard f7= new Dachboard();
+            f7 .Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Support f8= new Support();
+            f8 .Show();
+        }
     }
 }
