@@ -24,7 +24,7 @@ namespace SuperMarket_Project
 
 
 
-                if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text)) 
+                if (    string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text)) 
                 {
 
 
@@ -33,7 +33,8 @@ namespace SuperMarket_Project
 
                 }
 
-                else if (textBox1.Text == "Basil" && textBox2.Text == "225104208")
+                else if (textBox1.Text == "Basil" && textBox2.Text =="225104208")
+                    
                 {
 
                     Form2 f3 = new Form2();
@@ -62,11 +63,11 @@ namespace SuperMarket_Project
 
 
         }
-<<<<<<<<< Temporary merge branch 1
-=========
 
-   
->>>>>>>>> Temporary merge branch 2
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
         

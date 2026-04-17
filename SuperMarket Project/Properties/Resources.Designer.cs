@@ -63,9 +63,40 @@ namespace SuperMarket_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo_2026_04_11_09_09_00 {
             get {
                 object obj = ResourceManager.GetObject("photo_2026-04-11_09-09-00", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_04_11_09_09_001 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-04-11_09-09-001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_cartoonized_urban_supermarket_front_a_facade_of_a_store_vector_png_image_45981058 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-cartoonized-urban-supermarket-front-a-facade-of-a-store-vector-png-image_" +
+                        "45981058", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
