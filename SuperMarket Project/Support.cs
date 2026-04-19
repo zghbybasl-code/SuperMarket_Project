@@ -16,5 +16,10 @@ namespace SuperMarket_Project
         {
             InitializeComponent();
         }
+
+        private void Support_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

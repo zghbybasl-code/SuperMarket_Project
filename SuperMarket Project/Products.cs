@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace SuperMarket_Project
 {
@@ -15,6 +17,11 @@ namespace SuperMarket_Project
         public Products()
         {
             InitializeComponent();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+       
         }
     }
 }
