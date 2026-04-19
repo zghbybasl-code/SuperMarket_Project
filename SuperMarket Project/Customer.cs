@@ -33,6 +33,7 @@ namespace SuperMarket_Project
             {
                 MessageBox.Show("Please enter Customer Name and Phone Number.",
                 "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             dgvCustomers.Rows.Add(txtName.Text, txtPhone.Text);
