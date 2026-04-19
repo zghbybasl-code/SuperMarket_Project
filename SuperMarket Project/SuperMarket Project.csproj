@@ -102,6 +102,9 @@
     <Compile Include="Support.Designer.cs">
       <DependentUpon>Support.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dachboard.resx">
       <DependentUpon>Dachboard.cs</DependentUpon>
     </EmbeddedResource>
