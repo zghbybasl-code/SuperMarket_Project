@@ -57,15 +57,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Aqua;
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.CmbSite);
             this.groupBox1.Controls.Add(this.TxtName);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(32, 36);
+            this.groupBox1.Location = new System.Drawing.Point(42, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(304, 195);
+            this.groupBox1.Size = new System.Drawing.Size(309, 212);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Information";
@@ -79,12 +80,14 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(81, 129);
+            this.button1.BackColor = System.Drawing.Color.Cyan;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(81, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 37);
             this.button1.TabIndex = 10;
             this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label1
@@ -116,6 +119,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Aqua;
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.button2);
@@ -124,9 +128,9 @@
             this.groupBox2.Controls.Add(this.CmbProduct);
             this.groupBox2.Controls.Add(this.TxtCount);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(342, 36);
+            this.groupBox2.Location = new System.Drawing.Point(437, 46);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(335, 228);
+            this.groupBox2.Size = new System.Drawing.Size(335, 212);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Choose Products";
@@ -144,6 +148,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(6, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 17);
@@ -152,12 +157,15 @@
             // 
             // button2
             // 
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(128, 158);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 37);
             this.button2.TabIndex = 11;
             this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // CmbProduct
@@ -167,6 +175,7 @@
             this.CmbProduct.Name = "CmbProduct";
             this.CmbProduct.Size = new System.Drawing.Size(126, 24);
             this.CmbProduct.TabIndex = 9;
+            this.CmbProduct.SelectedIndexChanged += new System.EventHandler(this.CmbProduct_SelectedIndexChanged);
             // 
             // TxtCount
             // 
@@ -177,6 +186,7 @@
             // 
             // DgvOrders
             // 
+            this.DgvOrders.AllowDrop = true;
             this.DgvOrders.AllowUserToAddRows = false;
             this.DgvOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -270,12 +280,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(813, 579);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.DgvOrders);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Order";
             this.Text = "Orders";

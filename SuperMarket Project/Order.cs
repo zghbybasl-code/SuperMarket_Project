@@ -29,17 +29,10 @@ namespace SuperMarket_Project
             if(string.IsNullOrWhiteSpace(CmbProduct.Text)|| string.IsNullOrWhiteSpace(TxtCount.Text)|| string.IsNullOrWhiteSpace(TxtID.Text))
             {
 
-                MessageBox.Show("Error Pls Enter ID Product or Count Product  Choose The Prouduct ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error Pls Enter ID Product or Count Product Or Choose The Prouduct ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
           
-            CmbProduct.Items.Add("Burger");
-            CmbProduct.Items.Add("Pizza");
-            CmbProduct.Items.Add("Shawarma");
-            CmbProduct.Items.Add("Potato and Cheese Sandwich");
-            CmbProduct.Items.Add("Macaroni Bechamel");
-            CmbProduct.Items.Add("Chicken Crepe");
-            CmbProduct.SelectedIndex = 0;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -66,6 +59,16 @@ namespace SuperMarket_Project
             DgvOrders.Rows.Clear();
         }
 
-     
+        private void CmbProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            CmbProduct.Items.Add("Burger");
+            CmbProduct.Items.Add("Pizza");
+            CmbProduct.Items.Add("Shawarma");
+            CmbProduct.Items.Add("Potato and Cheese Sandwich");
+            CmbProduct.Items.Add("Macaroni Bechamel");
+            CmbProduct.Items.Add("Chicken Crepe");
+            CmbProduct.SelectedIndex = 0;
+        }
     }
 }
