@@ -16,5 +16,48 @@ namespace SuperMarket_Project
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrWhiteSpace(TxtName.Text)|| string.IsNullOrWhiteSpace(TxtID.Text))
+            {
+
+                MessageBox.Show("Error Pls Enter a Name or ID","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+     
+
+        
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            CmbProduct.Items.Add("Burger");
+            CmbProduct.Items.Add("Pizza");
+            CmbProduct.Items.Add("Shawarma");
+            CmbProduct.Items.Add("Potato and Cheese Sandwich");
+            CmbProduct.Items.Add("Macaroni Bechamel");
+            CmbProduct.Items.Add("Chicken Crepe");
+            CmbProduct.SelectedIndex = 0;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(TxtName.Text) || string.IsNullOrWhiteSpace(TxtID.Text))
+            {
+
+                MessageBox.Show("Error Pls Enter a Name or ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void DgvOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

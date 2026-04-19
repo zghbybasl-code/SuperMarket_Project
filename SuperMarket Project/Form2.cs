@@ -57,5 +57,10 @@ namespace SuperMarket_Project
             Support f8= new Support();
             f8 .Show();
         }
+
+        private void Market_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

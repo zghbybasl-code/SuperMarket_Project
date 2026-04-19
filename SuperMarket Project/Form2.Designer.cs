@@ -36,8 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +59,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(15, 171);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 55);
+            this.button2.Size = new System.Drawing.Size(167, 55);
             this.button2.TabIndex = 1;
             this.button2.Text = "Products";
             this.button2.UseVisualStyleBackColor = true;
@@ -70,7 +70,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(15, 247);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 61);
+            this.button3.Size = new System.Drawing.Size(167, 61);
             this.button3.TabIndex = 2;
             this.button3.Text = "Inventory";
             this.button3.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(14, 88);
+            this.button4.Location = new System.Drawing.Point(14, 94);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 54);
+            this.button4.Size = new System.Drawing.Size(168, 54);
             this.button4.TabIndex = 3;
             this.button4.Text = "Customer";
             this.button4.UseVisualStyleBackColor = true;
@@ -91,9 +91,10 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 4);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1327, 48);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1328, 58);
             this.flowLayoutPanel1.TabIndex = 4;
             this.flowLayoutPanel1.Tag = "";
             // 
@@ -113,7 +114,7 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(216, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1123, 494);
+            this.panel1.Size = new System.Drawing.Size(1112, 488);
             this.panel1.TabIndex = 5;
             // 
             // panel2
@@ -125,44 +126,46 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(6, 55);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 58);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(204, 488);
+            this.panel2.Size = new System.Drawing.Size(218, 480);
             this.panel2.TabIndex = 6;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(15, 333);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 51);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Dachboard";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(15, 404);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 50);
+            this.button6.Size = new System.Drawing.Size(167, 50);
             this.button6.TabIndex = 0;
             this.button6.Text = "Support";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(15, 333);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(167, 51);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Dashboard";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Market
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1340, 538);
+            this.ClientSize = new System.Drawing.Size(1328, 538);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Market";
             this.Text = "Market";
+            this.Load += new System.EventHandler(this.Market_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
