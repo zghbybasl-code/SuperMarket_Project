@@ -26,13 +26,13 @@ namespace SuperMarket_Project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(CmbProduct.Text)|| string.IsNullOrWhiteSpace(TxtCount.Text)|| string.IsNullOrWhiteSpace(TxtID.Text))
+            if(string.IsNullOrWhiteSpace(CmbProduct.Text)|| string.IsNullOrWhiteSpace(TxtCount.Text)|| string.IsNullOrWhiteSpace(TxtID.Text) || string.IsNullOrWhiteSpace(TxtPrice.Text))
             {
 
                 MessageBox.Show("Error Pls Enter ID Product or Count Product Or Choose The Prouduct ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                return;
             }
-          
+            DgvOrders.Rows.Add(CmbProduct.Text,TxtID,TxtCount.Text,TxtPrice);
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -41,13 +41,13 @@ namespace SuperMarket_Project
             {
 
                 MessageBox.Show("Error Pls Enter a Name or this Site", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
             }
+            DgvOrders.Rows.Add(TxtName.Text, CmbSite.Text);
         }
 
-        private void DgvOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -69,6 +69,17 @@ namespace SuperMarket_Project
             CmbProduct.Items.Add("Macaroni Bechamel");
             CmbProduct.Items.Add("Chicken Crepe");
             CmbProduct.SelectedIndex = 0;
+        }
+
+        private void CmbSite_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CmbSite.Items.Add("Naser City");
+            CmbSite.Items.Add("Maady");
+            CmbSite.Items.Add("New Cairo");
+            CmbSite.Items.Add("Sheikh Zayed");
+            CmbSite.Items.Add("Dokki");
+            CmbSite.Items.Add("New Damietta");
+            CmbSite.SelectedIndex= 0;
         }
     }
 }
