@@ -30,7 +30,7 @@ namespace SuperMarket_Project
 
                     MessageBox.Show("Please enter all Fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
 
-
+                return;
                 }
 
                 else if (textBox1.Text == "Basil" && textBox2.Text =="225104208")
