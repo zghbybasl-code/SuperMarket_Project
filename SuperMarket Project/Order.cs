@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace SuperMarket_Project
 {
@@ -17,19 +18,7 @@ namespace SuperMarket_Project
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if(string.IsNullOrWhiteSpace(TxtName.Text)|| string.IsNullOrWhiteSpace(TxtID.Text))
-            {
-
-                MessageBox.Show("Error Pls Enter a Name or ID","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+   
 
      
 
@@ -37,6 +26,13 @@ namespace SuperMarket_Project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            if(string.IsNullOrWhiteSpace(CmbProduct.Text)|| string.IsNullOrWhiteSpace(TxtCount.Text)|| string.IsNullOrWhiteSpace(TxtID.Text))
+            {
+
+                MessageBox.Show("Error Pls Enter ID Product or Count Product  Choose The Prouduct ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+          
             CmbProduct.Items.Add("Burger");
             CmbProduct.Items.Add("Pizza");
             CmbProduct.Items.Add("Shawarma");
@@ -48,10 +44,10 @@ namespace SuperMarket_Project
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(TxtName.Text) || string.IsNullOrWhiteSpace(TxtID.Text))
+            if (string.IsNullOrWhiteSpace(TxtName.Text) || string.IsNullOrWhiteSpace(CmbSite.Text))
             {
 
-                MessageBox.Show("Error Pls Enter a Name or ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error Pls Enter a Name or this Site", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -59,5 +55,17 @@ namespace SuperMarket_Project
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DgvOrders.Rows.Clear();
+        }
+
+     
     }
 }
