@@ -32,7 +32,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.CmbSite = new System.Windows.Forms.ComboBox();
             this.TxtName = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,12 +63,11 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.CmbSite);
             this.groupBox1.Controls.Add(this.TxtName);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(42, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(309, 255);
+            this.groupBox1.Size = new System.Drawing.Size(322, 184);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Information";
@@ -86,6 +84,19 @@
             // CmbSite
             // 
             this.CmbSite.FormattingEnabled = true;
+            this.CmbSite.Items.AddRange(new object[] {
+            "Naser City",
+            " Maady",
+            " New Cairo ",
+            "Sheikh Zayed",
+            " Dokki",
+            " New Damietta",
+            " New Mansoura",
+            " Naser City",
+            " Fifth Settlement",
+            "Alexandria ",
+            "Damietta ",
+            "Cairo"});
             this.CmbSite.Location = new System.Drawing.Point(81, 88);
             this.CmbSite.Name = "CmbSite";
             this.CmbSite.Size = new System.Drawing.Size(133, 24);
@@ -98,18 +109,6 @@
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(133, 23);
             this.TxtName.TabIndex = 8;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Cyan;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(83, 153);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 37);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label1
             // 
@@ -145,15 +144,14 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.TxtID);
             this.groupBox2.Controls.Add(this.CmbProduct);
             this.groupBox2.Controls.Add(this.TxtCount);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(437, 12);
+            this.groupBox2.Location = new System.Drawing.Point(370, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(335, 255);
+            this.groupBox2.Size = new System.Drawing.Size(331, 184);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Choose Products";
@@ -198,10 +196,11 @@
             // 
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(140, 202);
+            this.button2.Location = new System.Drawing.Point(204, 218);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 37);
+            this.button2.Size = new System.Drawing.Size(160, 48);
             this.button2.TabIndex = 11;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
@@ -210,6 +209,19 @@
             // CmbProduct
             // 
             this.CmbProduct.FormattingEnabled = true;
+            this.CmbProduct.Items.AddRange(new object[] {
+            "Chicken Crepe",
+            " Macaroni Bechamel",
+            " Potato and Cheese Sandwich ",
+            "Shawarma",
+            " Pizza",
+            " Burger",
+            "  Zinger Burger",
+            " Double Beef Burger",
+            " Crispy Chicken Sandwich",
+            " Philly Cheesesteak",
+            " Chicken Pane With Pasta",
+            " Beef Steak With Muchroom"});
             this.CmbProduct.Location = new System.Drawing.Point(140, 32);
             this.CmbProduct.Name = "CmbProduct";
             this.CmbProduct.Size = new System.Drawing.Size(126, 24);
@@ -283,9 +295,9 @@
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(505, 526);
+            this.button3.Location = new System.Drawing.Point(293, 526);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 29);
+            this.button3.Size = new System.Drawing.Size(167, 41);
             this.button3.TabIndex = 3;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
@@ -296,9 +308,9 @@
             this.button4.BackColor = System.Drawing.Color.Navy;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(134, 526);
+            this.button4.Location = new System.Drawing.Point(407, 218);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 29);
+            this.button4.Size = new System.Drawing.Size(163, 48);
             this.button4.TabIndex = 4;
             this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
@@ -314,6 +326,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.DgvOrders);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Order";
@@ -339,7 +352,6 @@
         private System.Windows.Forms.TextBox TxtCount;
         private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.ComboBox CmbProduct;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView DgvOrders;
         private System.Windows.Forms.Button button3;

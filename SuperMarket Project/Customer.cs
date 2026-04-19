@@ -44,5 +44,10 @@ namespace SuperMarket_Project
             MessageBox.Show("Customer added successfully!", "Success",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

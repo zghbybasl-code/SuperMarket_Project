@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace SuperMarket_Project
 {
@@ -32,21 +33,24 @@ namespace SuperMarket_Project
                 MessageBox.Show("Error Pls Enter ID Product or Count Product Or Choose The Prouduct ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            DgvOrders.Rows.Add(CmbProduct.Text,TxtID,TxtCount.Text,TxtPrice);
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(TxtName.Text) || string.IsNullOrWhiteSpace(CmbSite.Text))
+            else if (string.IsNullOrWhiteSpace(TxtName.Text) || string.IsNullOrWhiteSpace(CmbSite.Text))
             {
 
                 MessageBox.Show("Error Pls Enter a Name or this Site", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
 
             }
-            DgvOrders.Rows.Add(TxtName.Text, CmbSite.Text);
+            string Name = TxtName.Text;
+            string Site=CmbSite.Text.ToString();
+            string Products=CmbProduct.Text.ToString();
+            string ID = TxtID.Text;
+            string Count=TxtCount.Text;
+            string Price=TxtPrice.Text;
+            DgvOrders.Rows.Add(Name,Site,Products,ID,Count,Price);
+
         }
 
+      
 
 
         private void button3_Click(object sender, EventArgs e)
@@ -61,25 +65,19 @@ namespace SuperMarket_Project
 
         private void CmbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            CmbProduct.Items.Add("Burger");
-            CmbProduct.Items.Add("Pizza");
-            CmbProduct.Items.Add("Shawarma");
-            CmbProduct.Items.Add("Potato and Cheese Sandwich");
-            CmbProduct.Items.Add("Macaroni Bechamel");
-            CmbProduct.Items.Add("Chicken Crepe");
             CmbProduct.SelectedIndex = 0;
+
+
         }
+ 
+
+
 
         private void CmbSite_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CmbSite.Items.Add("Naser City");
-            CmbSite.Items.Add("Maady");
-            CmbSite.Items.Add("New Cairo");
-            CmbSite.Items.Add("Sheikh Zayed");
-            CmbSite.Items.Add("Dokki");
-            CmbSite.Items.Add("New Damietta");
+           
             CmbSite.SelectedIndex= 0;
         }
+       
     }
 }
