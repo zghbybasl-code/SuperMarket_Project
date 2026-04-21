@@ -12,10 +12,7 @@ namespace SuperMarket_Project
 {
     public partial class Market: Form
     {
-        public Market()
-        {
-            InitializeComponent();
-        }
+        public Market() => InitializeComponent();
 
         private void label1_Click(object sender, EventArgs e)
         {

@@ -51,9 +51,16 @@ namespace SuperMarket_Project
                     this.Hide();
 
                 }
+            else if (textBox1.Text == "1" && textBox2.Text == "1")
+            {
+                Market f2 = new Market();
+                f2.Show();
+                this.Hide();
+
+            }
 
 
-                else
+            else
                 {
                     MessageBox.Show("Invaled UserName or Passward");
 
