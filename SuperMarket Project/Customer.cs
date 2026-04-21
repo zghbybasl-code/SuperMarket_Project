@@ -32,7 +32,7 @@ namespace SuperMarket_Project
             if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtPhone.Text))
             {
                 MessageBox.Show("Please enter Customer Name and Phone Number.",
-                "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                "Input Error.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -42,7 +42,7 @@ namespace SuperMarket_Project
             txtPhone.Clear();
             txtName.Focus();
 
-            MessageBox.Show("Customer added successfully!", "Success",
+            MessageBox.Show("Customer added successfully.", "Success",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
