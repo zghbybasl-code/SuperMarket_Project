@@ -33,11 +33,11 @@ namespace SuperMarket_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Products f1= new Products();
-            f1.Show();
+            Products f7 = new Products();
+            f7.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             Inventory f6= new Inventory();
             f6.Show();
