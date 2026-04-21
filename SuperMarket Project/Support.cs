@@ -21,22 +21,25 @@ namespace SuperMarket_Project
         private void Support_Load(object sender, EventArgs e)
         {
         }
-            private void btnSubmit_Click(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtName.Text) ||
                 cmbIssueType.SelectedIndex == -1 ||
-                string.IsNullOrWhiteSpace(txtDescription.Text))
+                string.IsNullOrWhiteSpace(txtDescription.Text) ||
+                string.IsNullOrWhiteSpace(txtCustomerNum.Text))
             {
-                MessageBox.Show("Please fill in all fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please fill in ALL fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            dataGridView1.Rows.Add(txtName.Text, cmbIssueType.Text, txtDescription.Text, txtCustomerNum.Text);
 
             MessageBox.Show("Support request sent successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             txtName.Clear();
             cmbIssueType.SelectedIndex = -1;
             txtDescription.Clear();
+            txtCustomerNum.Clear();
             txtName.Focus();
         }
     }
-}
+    }
