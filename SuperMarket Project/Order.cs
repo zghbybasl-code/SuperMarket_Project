@@ -48,6 +48,12 @@ namespace SuperMarket_Project
             string Price=TxtPrice.Text;
             DgvOrders.Rows.Add(Name,Site,Products,ID,Count,Price);
             MessageBox.Show("The Order Added Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            TxtName.Clear();
+            TxtCount.Clear();
+            TxtPrice.Clear();
+            TxtID.Clear();
+            TxtName.Focus();
+            
 
         }
 

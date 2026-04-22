@@ -40,9 +40,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.CmbProduct = new System.Windows.Forms.ComboBox();
             this.TxtCount = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.DgvOrders = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -124,7 +124,7 @@
             // 
             this.TxtID.Location = new System.Drawing.Point(140, 106);
             this.TxtID.Name = "TxtID";
-            this.TxtID.Size = new System.Drawing.Size(126, 23);
+            this.TxtID.Size = new System.Drawing.Size(145, 23);
             this.TxtID.TabIndex = 6;
             // 
             // label2
@@ -160,7 +160,7 @@
             // 
             this.TxtPrice.Location = new System.Drawing.Point(140, 153);
             this.TxtPrice.Name = "TxtPrice";
-            this.TxtPrice.Size = new System.Drawing.Size(126, 23);
+            this.TxtPrice.Size = new System.Drawing.Size(145, 23);
             this.TxtPrice.TabIndex = 13;
             // 
             // label6
@@ -192,20 +192,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Choose Products";
             // 
-            // button2
-            // 
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.BackColor = System.Drawing.Color.Cyan;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(204, 218);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 48);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // CmbProduct
             // 
             this.CmbProduct.FormattingEnabled = true;
@@ -224,7 +210,7 @@
             " Beef Steak With Muchroom"});
             this.CmbProduct.Location = new System.Drawing.Point(140, 32);
             this.CmbProduct.Name = "CmbProduct";
-            this.CmbProduct.Size = new System.Drawing.Size(126, 24);
+            this.CmbProduct.Size = new System.Drawing.Size(145, 24);
             this.CmbProduct.TabIndex = 9;
             this.CmbProduct.SelectedIndexChanged += new System.EventHandler(this.CmbProduct_SelectedIndexChanged);
             // 
@@ -232,8 +218,22 @@
             // 
             this.TxtCount.Location = new System.Drawing.Point(140, 70);
             this.TxtCount.Name = "TxtCount";
-            this.TxtCount.Size = new System.Drawing.Size(126, 23);
+            this.TxtCount.Size = new System.Drawing.Size(145, 23);
             this.TxtCount.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(204, 218);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 48);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // DgvOrders
             // 
