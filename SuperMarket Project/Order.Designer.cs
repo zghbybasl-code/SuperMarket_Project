@@ -40,18 +40,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.CmbProduct = new System.Windows.Forms.ComboBox();
+            this.CmbMeal = new System.Windows.Forms.ComboBox();
             this.TxtCount = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.DgvOrders = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvOrders)).BeginInit();
@@ -154,7 +154,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.TxtID);
-            this.groupBox2.Controls.Add(this.CmbProduct);
+            this.groupBox2.Controls.Add(this.CmbMeal);
             this.groupBox2.Controls.Add(this.TxtCount);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(493, 15);
@@ -206,10 +206,10 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Choose Your Meal";
             // 
-            // CmbProduct
+            // CmbMeal
             // 
-            this.CmbProduct.FormattingEnabled = true;
-            this.CmbProduct.Items.AddRange(new object[] {
+            this.CmbMeal.FormattingEnabled = true;
+            this.CmbMeal.Items.AddRange(new object[] {
             "Chicken Crepe",
             " Macaroni Bechamel",
             " Potato and Cheese Sandwich ",
@@ -222,12 +222,12 @@
             " Philly Cheesesteak",
             " Chicken Pane With Pasta",
             " Beef Steak With Muchroom"});
-            this.CmbProduct.Location = new System.Drawing.Point(187, 39);
-            this.CmbProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CmbProduct.Name = "CmbProduct";
-            this.CmbProduct.Size = new System.Drawing.Size(192, 28);
-            this.CmbProduct.TabIndex = 9;
-            this.CmbProduct.SelectedIndexChanged += new System.EventHandler(this.CmbProduct_SelectedIndexChanged);
+            this.CmbMeal.Location = new System.Drawing.Point(187, 39);
+            this.CmbMeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbMeal.Name = "CmbMeal";
+            this.CmbMeal.Size = new System.Drawing.Size(192, 28);
+            this.CmbMeal.TabIndex = 9;
+            this.CmbMeal.SelectedIndexChanged += new System.EventHandler(this.CmbProduct_SelectedIndexChanged);
             // 
             // TxtCount
             // 
@@ -273,48 +273,6 @@
             this.DgvOrders.Size = new System.Drawing.Size(1000, 288);
             this.DgvOrders.TabIndex = 2;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Name";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "The Site";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Product";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "ID Product";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Count";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Price";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
@@ -343,6 +301,48 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Name";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "The Site";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Meal";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "ID Product";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Count";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Price";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
             // Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -358,6 +358,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Order";
             this.Text = "Orders";
+            this.Load += new System.EventHandler(this.Order_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -378,7 +379,7 @@
         private System.Windows.Forms.TextBox TxtID;
         private System.Windows.Forms.TextBox TxtCount;
         private System.Windows.Forms.TextBox TxtName;
-        private System.Windows.Forms.ComboBox CmbProduct;
+        private System.Windows.Forms.ComboBox CmbMeal;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView DgvOrders;
         private System.Windows.Forms.Button button3;

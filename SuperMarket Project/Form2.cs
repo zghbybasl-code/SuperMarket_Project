@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace SuperMarket_Project
 {
     public partial class Market: Form
@@ -51,9 +51,9 @@ namespace SuperMarket_Project
             f8 .Show();
         }
 
-        private void Market_Load(object sender, EventArgs e)
+        public void Market_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void button5_Click(object sender, EventArgs e)

@@ -27,7 +27,7 @@ namespace SuperMarket_Project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(CmbProduct.Text)|| string.IsNullOrWhiteSpace(TxtCount.Text)|| string.IsNullOrWhiteSpace(TxtID.Text) || string.IsNullOrWhiteSpace(TxtPrice.Text))
+            if(string.IsNullOrWhiteSpace(CmbMeal.Text)|| string.IsNullOrWhiteSpace(TxtCount.Text)|| string.IsNullOrWhiteSpace(TxtID.Text) || string.IsNullOrWhiteSpace(TxtPrice.Text))
             {
 
                 MessageBox.Show("Error Pls Enter ID Product or Count Product Or Choose The Prouduct ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -40,9 +40,20 @@ namespace SuperMarket_Project
                 return;
 
             }
+            //File Handling
+            OrderLogic neworder = new OrderLogic();
+            neworder.Name = TxtName.Text;
+            neworder.ID=TxtID.Text;
+            neworder.CmbMeal = CmbMeal.Text;
+            neworder.Count = TxtCount.Text;
+            neworder.Price = TxtPrice.Text;
+            neworder.cmbSite = CmbSite.Text;
+            neworder.savefile();
+
+
             string Name = TxtName.Text;
             string Site=CmbSite.Text.ToString();
-            string Products=CmbProduct.Text.ToString();
+            string Products=CmbMeal.Text.ToString();
             string ID = TxtID.Text;
             string Count=TxtCount.Text;
             string Price=TxtPrice.Text;
@@ -53,7 +64,11 @@ namespace SuperMarket_Project
             TxtPrice.Clear();
             TxtID.Clear();
             TxtName.Focus();
+          
             
+          
+
+
 
         }  
 
@@ -72,7 +87,7 @@ namespace SuperMarket_Project
 
         private void CmbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CmbProduct.SelectedIndex = 0;
+            CmbMeal.SelectedIndex = 0;
 
 
         }
@@ -85,15 +100,18 @@ namespace SuperMarket_Project
            
             CmbSite.SelectedIndex= 0;
         }
-     
-      
+
+        private void Order_Load(object sender, EventArgs e)
+        {
+            OrderLogic.LoadInfoGrade(DgvOrders);
+        }
     }
-    public class order
+    public class OrderLogic
     {
         public string Name { get; set; }
         public string ID { get; set; }
-        public int Count { get; set; }
-        public decimal Price { get; set; }
+        public string Count { get; set; }
+        public string Price { get; set; }
         public string cmbSite { get; set; }
         public string CmbMeal { get; set; }
 
@@ -102,9 +120,30 @@ namespace SuperMarket_Project
 
             using (StreamWriter Writer = new StreamWriter("orders.txt", true)) 
 
-            Writer.WriteLine($"{Name}|{ID}|{Count}|{Price}|{cmbSite}|{CmbMeal}");
+            Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{ID}|{Count}|{Price}");
         }
+        public static void LoadInfoGrade(DataGridView DgvOrders)
+        {
 
+            if (File.Exists("orders.txt"))
+                {
+
+                string[] Rows = File.ReadAllLines("orders.txt");
+                foreach (string s in Rows)
+                {
+                    string[] data = s.Split('|');
+
+                    DgvOrders.Rows.Add(data);
+
+
+                }
+
+
+            }
+
+
+        }
+        
       
 
 

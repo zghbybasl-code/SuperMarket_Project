@@ -31,19 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbIssueType = new System.Windows.Forms.ComboBox();
+            this.cmbIssueTybe = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCustomerNum = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSupport = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSupport)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,21 +74,21 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Issue Type";
             // 
-            // cmbIssueType
+            // cmbIssueTybe
             // 
-            this.cmbIssueType.FormattingEnabled = true;
-            this.cmbIssueType.Items.AddRange(new object[] {
+            this.cmbIssueTybe.FormattingEnabled = true;
+            this.cmbIssueTybe.Items.AddRange(new object[] {
             "High prices",
             "Bad service",
             "Ordar delay",
             "Cold food",
             "Late delivery ",
             "Small size"});
-            this.cmbIssueType.Location = new System.Drawing.Point(265, 135);
-            this.cmbIssueType.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbIssueType.Name = "cmbIssueType";
-            this.cmbIssueType.Size = new System.Drawing.Size(194, 26);
-            this.cmbIssueType.TabIndex = 4;
+            this.cmbIssueTybe.Location = new System.Drawing.Point(265, 135);
+            this.cmbIssueTybe.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbIssueTybe.Name = "cmbIssueTybe";
+            this.cmbIssueTybe.Size = new System.Drawing.Size(194, 26);
+            this.cmbIssueTybe.TabIndex = 4;
             // 
             // label3
             // 
@@ -142,21 +142,21 @@
             this.txtCustomerNum.Size = new System.Drawing.Size(191, 21);
             this.txtCustomerNum.TabIndex = 9;
             // 
-            // dataGridView1
+            // dgvSupport
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSupport.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvSupport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSupport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(595, 29);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(526, 432);
-            this.dataGridView1.TabIndex = 10;
+            this.dgvSupport.Location = new System.Drawing.Point(595, 29);
+            this.dgvSupport.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSupport.Name = "dgvSupport";
+            this.dgvSupport.RowHeadersWidth = 51;
+            this.dgvSupport.Size = new System.Drawing.Size(526, 432);
+            this.dgvSupport.TabIndex = 10;
             // 
             // Column1
             // 
@@ -210,18 +210,18 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.cmbIssueType);
+            this.Controls.Add(this.cmbIssueTybe);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvSupport);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "Support";
             this.Text = "Support";
             this.Load += new System.EventHandler(this.Support_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSupport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,13 +232,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbIssueType;
+        private System.Windows.Forms.ComboBox cmbIssueTybe;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCustomerNum;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSupport;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
