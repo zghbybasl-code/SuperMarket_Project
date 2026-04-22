@@ -55,7 +55,7 @@ namespace SuperMarket_Project
             TxtName.Focus();
             
 
-        }   
+        }  
 
       
 
@@ -85,6 +85,32 @@ namespace SuperMarket_Project
            
             CmbSite.SelectedIndex= 0;
         }
-       
+     
+      
     }
+    public class order
+    {
+        public string Name { get; set; }
+        public string ID { get; set; }
+        public int Count { get; set; }
+        public decimal Price { get; set; }
+        public string cmbSite { get; set; }
+        public string CmbMeal { get; set; }
+
+        public void savefile()
+        {
+
+            using (StreamWriter Writer = new StreamWriter("orders.txt", true)) 
+
+            Writer.WriteLine($"{Name}|{ID}|{Count}|{Price}|{cmbSite}|{CmbMeal}");
+        }
+
+      
+
+
+
+
+    }
+
+
 }
