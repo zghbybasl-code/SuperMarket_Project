@@ -41,5 +41,10 @@ namespace SuperMarket_Project
             txtCustomerNum.Clear();
             txtName.Focus();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
     }
