@@ -31,6 +31,7 @@ namespace SuperMarket_Project
             s1.CustomerNum= txtCustomerNum.Text;
             s1.Description= txtDescription.Text;
             s1.cmbIssuTybe=cmbIssueTybe.Text;
+            s1.savefile();
 
 
 
@@ -68,9 +69,10 @@ namespace SuperMarket_Project
             public string cmbIssuTybe { get; set; }
             public void savefile()
             {
-                StreamWriter Writer = new StreamWriter("Support.Txt", true);
-                Writer.WriteLine($"{Name2}|{cmbIssuTybe}|{Description}|{CustomerNum}");
-
+                using (StreamWriter Writer = new StreamWriter("Support.Txt", true))
+                {
+                    Writer.WriteLine($"{Name2}|{cmbIssuTybe}|{Description}|{CustomerNum}");
+                }
             }
             public static void LoadInfoSupport(DataGridView dgvSupport)
             {
