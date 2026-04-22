@@ -55,7 +55,7 @@ namespace SuperMarket_Project
             TxtName.Focus();
             
 
-        }
+        }   
 
       
 

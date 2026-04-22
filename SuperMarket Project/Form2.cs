@@ -58,7 +58,7 @@ namespace SuperMarket_Project
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure you want to Exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            MessageBox.Show("Are you sure you want to Exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             this.Close();
             
         }
