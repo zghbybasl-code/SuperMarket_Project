@@ -43,11 +43,7 @@ namespace SuperMarket_Project
             f6.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Dachboard f7= new Dachboard();
-            f7 .Show();
-        }
+        
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -58,6 +54,13 @@ namespace SuperMarket_Project
         private void Market_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure you want to Exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            this.Close();
+            
         }
     }
 }
