@@ -36,8 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -150,6 +150,18 @@
             this.panel2.Size = new System.Drawing.Size(219, 480);
             this.panel2.TabIndex = 6;
             // 
+            // Exit
+            // 
+            this.Exit.BackColor = System.Drawing.Color.Red;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit.Location = new System.Drawing.Point(15, 414);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(166, 54);
+            this.Exit.TabIndex = 0;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.button5_Click);
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Black;
@@ -164,18 +176,6 @@
             this.button6.Text = "Support";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // Exit
-            // 
-            this.Exit.BackColor = System.Drawing.Color.Red;
-            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Exit.Location = new System.Drawing.Point(15, 414);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(166, 54);
-            this.Exit.TabIndex = 0;
-            this.Exit.Text = "Exit";
-            this.Exit.UseVisualStyleBackColor = false;
-            this.Exit.Click += new System.EventHandler(this.button5_Click);
             // 
             // Market
             // 

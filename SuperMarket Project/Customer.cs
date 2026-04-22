@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,7 +36,14 @@ namespace SuperMarket_Project
                 MessageBox.Show("Please enter Customer Name and Phone Number.",
                 "Input Error.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+
             }
+            CustomerLogic s3 = new CustomerLogic();
+            s3.Name = txtName.Text;
+            s3.Phone = txtPhone.Text;
+            s3.savefile();
+
+
 
             dgvCustomers.Rows.Add(txtName.Text, txtPhone.Text);
 
@@ -50,5 +59,94 @@ namespace SuperMarket_Project
         {
             this.Close();
         }
+
+        private void Customer_Load(object sender, EventArgs e)
+        {
+            CustomerLogic.LoadFile(dgvCustomers);
+        }
+      
+        }
     }
+public class CustomerLogic
+{
+    public string Name { get; set; }
+    public string Phone { get; set; }
+
+    public void savefile()
+    {
+
+
+        using (StreamWriter Writer = new StreamWriter("Customer.Txt", true))
+
+            Writer.WriteLine($"{Name}|{Phone}");
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void LoadFile(DataGridView DgvCustomers)
+    {
+
+
+        if (File.Exists("Customer.Txt"))
+        {
+            string[] Rows = File.ReadAllLines("Customer.Txt");
+            foreach (string s in Rows)
+            {
+
+
+                string[] data3 = s.Split('|');
+                DgvCustomers.Rows.Add(data3);
+
+
+            }
+
+           
+
+
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
