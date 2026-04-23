@@ -33,7 +33,7 @@ namespace SuperMarket_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Products f7 = new Products();
+            Meals f7 = new Meals();
             f7.Show();
         }
 

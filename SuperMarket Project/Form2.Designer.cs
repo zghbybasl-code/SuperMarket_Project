@@ -67,7 +67,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 55);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Products";
+            this.button2.Text = "Meals";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -154,10 +154,10 @@
             // 
             this.panel1.BackgroundImage = global::SuperMarket_Project.Properties.Resources.tim_toomey_STqHLqMne3k_unsplash;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(216, 55);
+            this.panel1.Location = new System.Drawing.Point(206, 55);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1112, 487);
+            this.panel1.Size = new System.Drawing.Size(1122, 487);
             this.panel1.TabIndex = 5;
             // 
             // Market

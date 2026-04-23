@@ -1,6 +1,6 @@
 ﻿namespace SuperMarket_Project
 {
-    partial class Products
+    partial class Meals
     {
         /// <summary>
         /// Required designer variable.
