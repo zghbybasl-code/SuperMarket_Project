@@ -25,7 +25,7 @@ namespace SuperMarket_Project
             SupportLogic.LoadInfoSupport(dgvSupport);
         }
         private void btnSubmit_Click(object sender, EventArgs e)
-        {
+        {   //file handleing
             SupportLogic s1= new SupportLogic();
             s1.Name2 = txtName.Text;
             s1.CustomerNum= txtCustomerNum.Text;

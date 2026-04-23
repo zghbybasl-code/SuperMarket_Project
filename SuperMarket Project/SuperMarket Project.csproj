@@ -110,6 +110,9 @@
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -153,6 +156,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngtree-a-supermarket-shelf-filled-with-colorful-rows-of-various-products-including-image_17215282.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim-toomey-STqHLqMne3k-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-jorrynmorais-26076354.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,6 +38,7 @@ namespace SuperMarket_Project
                 return;
 
             }
+            //File Handleing
             CustomerLogic s3 = new CustomerLogic();
             s3.Name = txtName.Text;
             s3.Phone = txtPhone.Text;
