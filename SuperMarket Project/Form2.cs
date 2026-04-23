@@ -39,8 +39,7 @@ namespace SuperMarket_Project
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            Inventory f6= new Inventory();
-            f6.Show();
+           
         }
 
         
