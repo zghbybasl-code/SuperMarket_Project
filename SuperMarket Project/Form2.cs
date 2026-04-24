@@ -24,6 +24,8 @@ namespace SuperMarket_Project
             Order f1 = new Order();
             f1.Show();
             BtnOrder.BackColor = Color.SkyBlue;
+
+
             Cursor = Cursors.Default;
         }
 
@@ -67,6 +69,7 @@ namespace SuperMarket_Project
         {
             MessageBox.Show("Are you sure you want to Exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             this.Close();
+            Application.Exit();
             BtnOrder.BackColor = Color.DarkRed;
             Cursor = Cursors.Default;
 
