@@ -38,6 +38,9 @@ namespace SuperMarket_Project
                 return;
 
             }
+            dgvCustomers.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.None;
+           
+
             //File Handleing
             CustomerLogic s3 = new CustomerLogic();
             s3.Name = txtName.Text;
@@ -54,6 +57,7 @@ namespace SuperMarket_Project
 
             MessageBox.Show("Customer added successfully.", "Success",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
+            dgvCustomers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void button1_Click(object sender, EventArgs e)
