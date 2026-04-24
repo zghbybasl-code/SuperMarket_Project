@@ -114,7 +114,7 @@
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnSubmit.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSubmit.ImageKey = "(none)";
-            this.btnSubmit.Location = new System.Drawing.Point(280, 310);
+            this.btnSubmit.Location = new System.Drawing.Point(280, 318);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(176, 52);
@@ -144,7 +144,7 @@
             // 
             // dgvSupport
             // 
-            this.dgvSupport.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvSupport.BackgroundColor = System.Drawing.Color.DarkCyan;
             this.dgvSupport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSupport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -202,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(1192, 547);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSubmit);

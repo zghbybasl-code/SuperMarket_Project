@@ -23,18 +23,24 @@ namespace SuperMarket_Project
         {
             Order f1 = new Order();
             f1.Show();
+            BtnOrder.BackColor = Color.SkyBlue;
+            Cursor = Cursors.Default;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Customer f2= new Customer();
             f2.Show();
+            BtnOrder.BackColor = Color.SkyBlue;
+            Cursor = Cursors.Default;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Meals f7 = new Meals();
             f7.Show();
+            BtnOrder.BackColor = Color.SkyBlue;
+            Cursor = Cursors.Default;
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -48,6 +54,8 @@ namespace SuperMarket_Project
         {
             Support f8= new Support();
             f8 .Show();
+            BtnOrder.BackColor = Color.SkyBlue;
+            Cursor = Cursors.Default;
         }
 
         public void Market_Load(object sender, EventArgs e)
@@ -59,7 +67,9 @@ namespace SuperMarket_Project
         {
             MessageBox.Show("Are you sure you want to Exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             this.Close();
-            
+            BtnOrder.BackColor = Color.DarkRed;
+            Cursor = Cursors.Default;
+
         }
     }
 }

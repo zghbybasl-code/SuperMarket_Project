@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnOrder = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Costom = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -41,24 +41,24 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnOrder
             // 
-            this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(16, 33);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 53);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Orders";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnOrder.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOrder.ForeColor = System.Drawing.Color.White;
+            this.BtnOrder.Location = new System.Drawing.Point(16, 33);
+            this.BtnOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnOrder.Name = "BtnOrder";
+            this.BtnOrder.Size = new System.Drawing.Size(168, 53);
+            this.BtnOrder.TabIndex = 0;
+            this.BtnOrder.Text = "Orders";
+            this.BtnOrder.UseVisualStyleBackColor = false;
+            this.BtnOrder.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.RosyBrown;
+            this.button2.BackColor = System.Drawing.Color.DarkBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
@@ -71,24 +71,24 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button4
+            // Costom
             // 
-            this.button4.BackColor = System.Drawing.Color.RosyBrown;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(16, 124);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 54);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Customer";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Costom.BackColor = System.Drawing.Color.DarkBlue;
+            this.Costom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Costom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Costom.ForeColor = System.Drawing.Color.White;
+            this.Costom.Location = new System.Drawing.Point(16, 124);
+            this.Costom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Costom.Name = "Costom";
+            this.Costom.Size = new System.Drawing.Size(168, 54);
+            this.Costom.TabIndex = 3;
+            this.Costom.Text = "Customer";
+            this.Costom.UseVisualStyleBackColor = false;
+            this.Costom.Click += new System.EventHandler(this.button4_Click);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Maroon;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
             this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -102,6 +102,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(472, 33);
@@ -110,12 +111,12 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.BackColor = System.Drawing.Color.DarkGray;
             this.panel2.Controls.Add(this.Exit);
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.Costom);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.BtnOrder);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 58);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -127,6 +128,7 @@
             // 
             this.Exit.BackColor = System.Drawing.Color.Red;
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit.ForeColor = System.Drawing.Color.White;
             this.Exit.Location = new System.Drawing.Point(16, 404);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(166, 54);
@@ -137,7 +139,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.RosyBrown;
+            this.button6.BackColor = System.Drawing.Color.DarkBlue;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
@@ -182,9 +184,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnOrder;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Costom;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;

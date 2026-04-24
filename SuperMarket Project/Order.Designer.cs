@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.CmbSite = new System.Windows.Forms.ComboBox();
@@ -44,14 +46,14 @@
             this.TxtCount = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.DgvOrders = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvOrders)).BeginInit();
@@ -59,16 +61,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Aqua;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.CmbSite);
             this.groupBox1.Controls.Add(this.TxtName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox1.Location = new System.Drawing.Point(56, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(429, 226);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -101,7 +104,7 @@
             "Damietta ",
             "Cairo"});
             this.CmbSite.Location = new System.Drawing.Point(108, 108);
-            this.CmbSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbSite.Margin = new System.Windows.Forms.Padding(4);
             this.CmbSite.Name = "CmbSite";
             this.CmbSite.Size = new System.Drawing.Size(176, 28);
             this.CmbSite.TabIndex = 11;
@@ -110,7 +113,7 @@
             // TxtName
             // 
             this.TxtName.Location = new System.Drawing.Point(108, 48);
-            this.TxtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtName.Margin = new System.Windows.Forms.Padding(4);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(176, 26);
             this.TxtName.TabIndex = 8;
@@ -129,7 +132,7 @@
             // TxtID
             // 
             this.TxtID.Location = new System.Drawing.Point(187, 130);
-            this.TxtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtID.Margin = new System.Windows.Forms.Padding(4);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(192, 26);
             this.TxtID.TabIndex = 6;
@@ -147,7 +150,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Aqua;
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.groupBox2.Controls.Add(this.TxtPrice);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label3);
@@ -157,10 +160,11 @@
             this.groupBox2.Controls.Add(this.CmbMeal);
             this.groupBox2.Controls.Add(this.TxtCount);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox2.Location = new System.Drawing.Point(493, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(441, 226);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -169,7 +173,7 @@
             // TxtPrice
             // 
             this.TxtPrice.Location = new System.Drawing.Point(187, 188);
-            this.TxtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(192, 26);
             this.TxtPrice.TabIndex = 13;
@@ -198,7 +202,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Location = new System.Drawing.Point(24, 43);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -223,7 +227,7 @@
             " Chicken Pane With Pasta",
             " Beef Steak With Muchroom"});
             this.CmbMeal.Location = new System.Drawing.Point(187, 39);
-            this.CmbMeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbMeal.Margin = new System.Windows.Forms.Padding(4);
             this.CmbMeal.Name = "CmbMeal";
             this.CmbMeal.Size = new System.Drawing.Size(192, 28);
             this.CmbMeal.TabIndex = 9;
@@ -232,7 +236,7 @@
             // TxtCount
             // 
             this.TxtCount.Location = new System.Drawing.Point(187, 86);
-            this.TxtCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCount.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCount.Name = "TxtCount";
             this.TxtCount.Size = new System.Drawing.Size(192, 26);
             this.TxtCount.TabIndex = 7;
@@ -240,11 +244,11 @@
             // button2
             // 
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(272, 268);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(213, 59);
             this.button2.TabIndex = 11;
@@ -256,7 +260,12 @@
             // 
             this.DgvOrders.AllowDrop = true;
             this.DgvOrders.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.DgvOrders.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvOrders.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.DgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -265,41 +274,22 @@
             this.Column5,
             this.Column4,
             this.Column6});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvOrders.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvOrders.GridColor = System.Drawing.Color.White;
             this.DgvOrders.Location = new System.Drawing.Point(16, 352);
-            this.DgvOrders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvOrders.Margin = new System.Windows.Forms.Padding(4);
             this.DgvOrders.Name = "DgvOrders";
             this.DgvOrders.ReadOnly = true;
             this.DgvOrders.RowHeadersWidth = 51;
             this.DgvOrders.Size = new System.Drawing.Size(1000, 288);
             this.DgvOrders.TabIndex = 2;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(391, 647);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(223, 50);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Navy;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(543, 268);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(217, 59);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Column1
             // 
@@ -343,11 +333,39 @@
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(391, 647);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(223, 50);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Exit";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(543, 268);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(217, 59);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Clear";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1068, 713);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
