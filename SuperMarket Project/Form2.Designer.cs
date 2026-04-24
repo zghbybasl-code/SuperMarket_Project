@@ -154,10 +154,10 @@
             // 
             this.panel1.BackgroundImage = global::SuperMarket_Project.Properties.Resources.tim_toomey_STqHLqMne3k_unsplash;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(206, 55);
+            this.panel1.Location = new System.Drawing.Point(225, 55);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1122, 487);
+            this.panel1.Size = new System.Drawing.Size(1103, 487);
             this.panel1.TabIndex = 5;
             // 
             // Market

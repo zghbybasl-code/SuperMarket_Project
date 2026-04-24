@@ -105,9 +105,9 @@
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.BackgroundImage = global::SuperMarket_Project.Properties.Resources.pexels_jorrynmorais_26076354;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(455, 4);
+            this.panel1.Location = new System.Drawing.Point(433, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(477, 457);
+            this.panel1.Size = new System.Drawing.Size(499, 457);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
