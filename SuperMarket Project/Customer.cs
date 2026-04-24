@@ -69,8 +69,12 @@ namespace SuperMarket_Project
         {
             CustomerLogic.LoadFile(dgvCustomers);
         }
-      
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dgvCustomers.Rows.Clear();
         }
+    }
     }
 public class CustomerLogic
 {
