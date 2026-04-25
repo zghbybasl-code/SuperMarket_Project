@@ -105,6 +105,11 @@ namespace SuperMarket_Project
         {
             OrderLogic.LoadInfoGrade(DgvOrders);
         }
+
+        private void TxtName_TextChanged(object sender, EventArgs e)
+        {
+            TxtName.Focus();
+        }
     }
     public class OrderLogic
     {

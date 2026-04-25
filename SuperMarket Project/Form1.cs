@@ -24,7 +24,7 @@ namespace SuperMarket_Project
 
 
 
-                if (    string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text)) 
+                if (    string.IsNullOrWhiteSpace(TxtUserName.Text) || string.IsNullOrWhiteSpace(textBox2.Text)) 
                 {
 
 
@@ -33,7 +33,7 @@ namespace SuperMarket_Project
                 return;
                 }
 
-                else if (textBox1.Text == "Basil" && textBox2.Text =="225104208")
+                else if (TxtUserName.Text == "Basil" && textBox2.Text =="225104208")
                     
                 {
 
@@ -44,14 +44,14 @@ namespace SuperMarket_Project
 
                 }
 
-                else if (textBox1.Text == "Ahmed" && textBox2.Text == "225100182")
+                else if (TxtUserName.Text == "Ahmed" && textBox2.Text == "225100182")
                 {
                     Market f2 = new Market();
                     f2.Show();
                     this.Hide();
 
                 }
-            else if (textBox1.Text == "1" && textBox2.Text == "1")
+            else if (TxtUserName.Text == "1" && textBox2.Text == "1")
             {
                 Market f2 = new Market();
                 f2.Show();
@@ -73,7 +73,7 @@ namespace SuperMarket_Project
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            TxtUserName.Focus();
         }
 
         private void label1_Click(object sender, EventArgs e)
