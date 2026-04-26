@@ -317,7 +317,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DgvOrders.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvOrders.GridColor = System.Drawing.Color.White;
-            this.DgvOrders.Location = new System.Drawing.Point(77, 298);
+            this.DgvOrders.Location = new System.Drawing.Point(123, 315);
             this.DgvOrders.Name = "DgvOrders";
             this.DgvOrders.ReadOnly = true;
             this.DgvOrders.RowHeadersWidth = 51;

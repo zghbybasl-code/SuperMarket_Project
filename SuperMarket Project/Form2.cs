@@ -74,5 +74,10 @@ namespace SuperMarket_Project
             Cursor = Cursors.Default;
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
