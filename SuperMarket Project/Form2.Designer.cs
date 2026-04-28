@@ -170,7 +170,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(827, 396);
             this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+           
             // 
             // Market
             // 
@@ -184,7 +184,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Market";
             this.Text = "Restaurant";
-            this.Load += new System.EventHandler(this.Market_Load);
+           
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
