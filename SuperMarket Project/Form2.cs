@@ -29,10 +29,6 @@ namespace SuperMarket_Project
 
             Cursor = Cursors.Default;
         }
-
-
-        
-
         private void button4_Click(object sender, EventArgs e)
         {
             Customer f2= new Customer();
@@ -71,6 +67,11 @@ namespace SuperMarket_Project
 
         private void button5_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Are you sure you want to Exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+           
+                this.Close();
+                Application.Exit();
+            
 
             MessageBox.Show("Are you sure you want to Exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             this.Close();
@@ -90,5 +91,10 @@ namespace SuperMarket_Project
         
 
 
+        
+        private void label1_Click(object sender, EventArgs e) { }
+        private void Button3_Click(object sender, EventArgs e) { }
+        private void panel1_Paint(object sender, PaintEventArgs e) { }
+        private void Market_Load(object sender, EventArgs e) { }
     }
 }
