@@ -91,8 +91,52 @@ namespace SuperMarket_Project
 
         private void CmbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {//ده كنت بفكر في حته الهوا يظهر اول انديكس بس مظبتش
-            CmbMeal.SelectedIndex = 0;
+            if (CmbMeal.SelectedItem != null)
+            {
 
+                MealsTybe Selected=(MealsTybe)CmbMeal.SelectedItem;
+                int ID = 0;
+                double Price = 0;
+                switch (Selected)
+                {
+                    case
+                        MealsTybe.Chicken_Crepe:
+                            Price = 120.50; ID = 13432144;
+                        break;
+                    case
+                        MealsTybe.Beef_Steak_With_Muchroom:
+                        Price = 200;  ID = 876575756;
+                        break;
+                    case
+                        MealsTybe.Chicken_Pane_With_Pasta:
+                        Price = 150; ID = 543243543;
+                        break;
+                    case
+                        MealsTybe.Zinger_Burger:
+                        Price = 300; ID = 345235253;
+                        break;
+                    case
+                        MealsTybe.Pizza:
+                        Price = 100;  ID = 23432453;
+                        break;
+                    case
+                        MealsTybe.Double_Beef_Burger:
+                        Price = 200; ID = 53424325;
+                        break;
+
+                    case
+                        MealsTybe.Crispy_Chicken_Sandwich:
+                        Price = 250; ID = 23576876;
+                        break;
+                       
+                }
+                TxtID.Text = ID.ToString();
+                TxtPrice.Text = Price.ToString();
+
+
+
+            }
+         
 
         }
  
@@ -108,6 +152,8 @@ namespace SuperMarket_Project
         private void Order_Load(object sender, EventArgs e)
         {//  هو طبعا هتلاقيه تحت خالصOrderLogic  ده تبع شفل الفايل هندل اسم الكلاس  
             OrderLogic.LoadInfoGrade(DgvOrders);
+            CmbMeal.DataSource=Enum.GetValues(typeof(MealsTybe));
+            CmbDrink.DataSource = Enum.GetValues(typeof(DrinksTybe));
         }
 
         private void TxtName_TextChanged(object sender, EventArgs e)
@@ -168,19 +214,32 @@ namespace SuperMarket_Project
     }//هنا للاسف الدكاتره طالبين لازم اعمله enum
     public enum MealsTybe
     {
-        Burger,
-        Pizza,
-        Pasta,
-        Chicken,
+ Chicken_Crepe,
+ Macaroni_Bechamel,
+ Potato_and_Cheese_Sandwich,
+Shawarma,
+ Pizza,
+ Burger,
+  Zinger_Burger,
+ Double_Beef_Burger,
+ Crispy_Chicken_Sandwich,
+ Philly_Cheesesteak,
+ Chicken_Pane_With_Pasta,
+ Beef_Steak_With_Muchroom,
 
 
     }
     public enum DrinksTybe
     {
-        water,
-        Cola,
-        pepsi,
-        juice
+Black_tea,
+Green_tea,
+orange_juice,
+Apple_juice,
+Mango_juice,
+Espresso,
+Latte_Cappuccino,
+Hot_Chocolate,
+Water,
 
 
 
@@ -189,11 +248,10 @@ namespace SuperMarket_Project
     }
     public class MealsItem
     {
-        public MealsTybe MealTybe {get; set;}
-    public  DrinksTybe DrinkTybe { get; set; }
-    public double Price {  get; set; }
-public string ID {  get; set; }
-        public override string ToString()
+      public MealsTybe MealTybe {get; set;}
+      public  DrinksTybe DrinkTybe { get; set; }
+      public string ID {  get; set; }
+      public override string ToString()
         {
             return MealTybe.ToString();
 
