@@ -92,7 +92,7 @@ namespace SuperMarket_Project
         private void CmbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {//ده كنت بفكر في حته الهوا يظهر اول انديكس بس مظبتش
             if (CmbMeal.SelectedItem != null)
-            {
+            {     // Add Enum
 
                 MealsTybe Selected=(MealsTybe)CmbMeal.SelectedItem;
                 int ID = 0;
@@ -133,7 +133,7 @@ namespace SuperMarket_Project
                 TxtID.Text = ID.ToString();
                 TxtPrice.Text = Price.ToString();
 
-
+           
 
             }
          
