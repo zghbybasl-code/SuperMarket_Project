@@ -19,15 +19,15 @@ namespace SuperMarket_Project
             InitializeComponent();
         }
 
-   
 
-     
 
-        
-       
+
+
+
+
         private void button2_Click_1(object sender, EventArgs e)
         {    //if  الكومبوا بوكس او تيكست بوكس فاضي
-            if (string.IsNullOrWhiteSpace(CmbMeal.Text)|| string.IsNullOrWhiteSpace(TxtCount.Text)|| string.IsNullOrWhiteSpace(TxtID.Text) || string.IsNullOrWhiteSpace(TxtPrice.Text))
+            if (string.IsNullOrWhiteSpace(CmbMeal.Text) || string.IsNullOrWhiteSpace(TxtCount.Text) || string.IsNullOrWhiteSpace(TxtID.Text) || string.IsNullOrWhiteSpace(TxtPrice.Text))
             {
 
                 MessageBox.Show("Error Pls Enter ID Product or Count Product Or Choose The Prouduct ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -43,40 +43,40 @@ namespace SuperMarket_Project
             //File Handling
             OrderLogic neworder = new OrderLogic();
             neworder.Name = TxtName.Text;
-            neworder.ID=TxtID.Text;
+            neworder.ID = TxtID.Text;
             neworder.CmbMeal = CmbMeal.Text;
             neworder.Count = TxtCount.Text;
             neworder.Price = TxtPrice.Text;
             neworder.cmbSite = CmbSite.Text;
-            neworder.CmbDrink=CmbDrink.Text;
+            neworder.CmbDrink = CmbDrink.Text;
             neworder.TxtCount2 = TxtCount2.Text;
             neworder.savefile();
 
             //Data Grade View 
             string Name = TxtName.Text;
-            string Site=CmbSite.Text.ToString();
-            string Meals=CmbMeal.Text.ToString();
+            string Site = CmbSite.Text.ToString();
+            string Meals = CmbMeal.Text.ToString();
             string ID = TxtID.Text;
-            string CountMeals=TxtCount.Text;
-            string Price=TxtPrice.Text;
-            string Count2=TxtCount2.Text;
-            string Drink=CmbDrink.Text;
-            DgvOrders.Rows.Add(Name,Site, Meals, CountMeals, Drink,Count2, ID, Price);
+            string CountMeals = TxtCount.Text;
+            string Price = TxtPrice.Text;
+            string Count2 = TxtCount2.Text;
+            string Drink = CmbDrink.Text;
+            DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, Count2, ID, Price);
             MessageBox.Show("The Order Added Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             TxtName.Clear();
             TxtCount.Clear();
             TxtPrice.Clear();
             TxtID.Clear();
             TxtName.Focus();
-          
-            
-          
 
 
 
-        }  
 
-      
+
+
+        }
+
+
 
 
         private void button3_Click(object sender, EventArgs e)
@@ -101,8 +101,8 @@ namespace SuperMarket_Project
 
         private void CmbSite_SelectedIndexChanged(object sender, EventArgs e)
         {// حاولت هنا برضوا
-           
-            CmbSite.SelectedIndex= 0;
+
+            CmbSite.SelectedIndex = 0;
         }
 
         private void Order_Load(object sender, EventArgs e)
@@ -135,7 +135,7 @@ namespace SuperMarket_Project
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.WindowState=FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Minimized;
         }
     }
     public class OrderLogic// ده كلاس بتاع الفايل هندل
@@ -146,21 +146,21 @@ namespace SuperMarket_Project
         public string Price { get; set; }
         public string cmbSite { get; set; }
         public string CmbMeal { get; set; }
-        public string CmbDrink {  get; set; }
-        public string TxtCount2 {  get; set; }
+        public string CmbDrink { get; set; }
+        public string TxtCount2 { get; set; }
 
         public void savefile()//دي الداله احنا هننشيء فيها فايل الهنخزن فيه كل حاجه  تبع الجدول
         {
 
-            using (StreamWriter Writer = new StreamWriter("orders.txt", true)) 
+            using (StreamWriter Writer = new StreamWriter("orders.txt", true))
 
-            Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{TxtCount2}|{CmbDrink}|{ID}|{Count}|{Price}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
+                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{TxtCount2}|{CmbDrink}|{ID}|{Count}|{Price}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
         }
         public static void LoadInfoGrade(DataGridView DgvOrders)
         {
 
             if (File.Exists("orders.txt"))
-                {
+            {
 
                 string[] Rows = File.ReadAllLines("orders.txt");
                 foreach (string s in Rows)
@@ -177,8 +177,8 @@ namespace SuperMarket_Project
 
 
         }
-        
-      
+
+
 
 
 
@@ -222,7 +222,7 @@ public string ID {  get; set; }
 
 
     }
-    
+
 
 
 }
