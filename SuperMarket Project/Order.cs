@@ -119,6 +119,24 @@ namespace SuperMarket_Project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.WindowState=FormWindowState.Minimized;
+        }
     }
     public class OrderLogic// ده كلاس بتاع الفايل هندل
     {//كل البروبيرتي دي بنساويها فوق باسم التيكست بوكس او الكومبوا بوكس التبعه
