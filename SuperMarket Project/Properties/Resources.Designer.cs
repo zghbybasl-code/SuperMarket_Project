@@ -83,6 +83,36 @@ namespace SuperMarket_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_jorrynmorais_260763541 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-jorrynmorais-260763541", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_jorrynmorais_260763542 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-jorrynmorais-260763542", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_jorrynmorais_260763543 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-jorrynmorais-260763543", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo_2026_04_11_09_09_00 {
             get {
                 object obj = ResourceManager.GetObject("photo_2026-04-11_09-09-00", resourceCulture);
@@ -138,6 +168,16 @@ namespace SuperMarket_Project.Properties {
         internal static System.Drawing.Bitmap tim_toomey_STqHLqMne3k_unsplash {
             get {
                 object obj = ResourceManager.GetObject("tim-toomey-STqHLqMne3k-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tim_toomey_STqHLqMne3k_unsplash1 {
+            get {
+                object obj = ResourceManager.GetObject("tim-toomey-STqHLqMne3k-unsplash1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,6 +1,6 @@
 ﻿namespace SuperMarket_Project
 {
-    partial class Meals
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Meals
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 499);
-            this.Name = "Meals";
-            this.Text = " ";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Menu";
+            this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
 
         }

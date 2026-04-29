@@ -124,11 +124,20 @@
   <data name="photo_2026-04-11_09-09-001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photo_2026-04-11_09-09-001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pngtree-cartoon-supermarket-shelf-element-png-image_4068780" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-cartoon-supermarket-shelf-element-png-image_4068780.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tim-toomey-STqHLqMne3k-unsplash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tim-toomey-STqHLqMne3k-unsplash1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-jorrynmorais-260763541" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-jorrynmorais-260763541.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-cartoonized-urban-supermarket-front-a-facade-of-a-store-vector-png-image_45981058" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-cartoonized-urban-supermarket-front-a-facade-of-a-store-vector-png-image_45981058.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pexels-jorrynmorais-260763542" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-jorrynmorais-260763542.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tim-toomey-STqHLqMne3k-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tim-toomey-STqHLqMne3k-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,10 +145,13 @@
   <data name="pngtree-a-supermarket-shelf-filled-with-colorful-rows-of-various-products-including-image_17215282" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-a-supermarket-shelf-filled-with-colorful-rows-of-various-products-including-image_17215282.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-cartoon-supermarket-shelf-element-png-image_4068780" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-cartoon-supermarket-shelf-element-png-image_4068780.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-cartoonized-urban-supermarket-front-a-facade-of-a-store-vector-png-image_45981058" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-cartoonized-urban-supermarket-front-a-facade-of-a-store-vector-png-image_45981058.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pexels-jorrynmorais-26076354" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-jorrynmorais-26076354.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-jorrynmorais-260763543" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-jorrynmorais-260763543.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

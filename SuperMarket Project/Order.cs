@@ -50,6 +50,7 @@ namespace SuperMarket_Project
             neworder.cmbSite = CmbSite.Text;
             neworder.CmbDrink = CmbDrink.Text;
             neworder.TxtCount2 = TxtCount2.Text;
+            neworder.IDDrink=IdDrink.Text;
             neworder.savefile();
 
             //Data Grade View 
@@ -61,7 +62,8 @@ namespace SuperMarket_Project
             string Price = TxtPrice.Text;
             string Count2 = TxtCount2.Text;
             string Drink = CmbDrink.Text;
-            DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, Count2, ID, Price);
+            string IDDrink = IdDrink.Text;
+            DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, Count2, ID,IDDrink, Price);
             MessageBox.Show("The Order Added Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             TxtName.Clear();
             TxtCount.Clear();
@@ -250,6 +252,11 @@ namespace SuperMarket_Project
 
 
         }
+
+        private void DgvOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     public class OrderLogic// ده كلاس بتاع الفايل هندل
     {//كل البروبيرتي دي بنساويها فوق باسم التيكست بوكس او الكومبوا بوكس التبعه
@@ -261,13 +268,14 @@ namespace SuperMarket_Project
         public string CmbMeal { get; set; }
         public string CmbDrink { get; set; }
         public string TxtCount2 { get; set; }
+        public string IDDrink {  get; set; }
 
         public void savefile()//دي الداله احنا هننشيء فيها فايل الهنخزن فيه كل حاجه  تبع الجدول
         {
 
             using (StreamWriter Writer = new StreamWriter("orders.txt", true))
 
-                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{TxtCount2}|{CmbDrink}|{ID}|{Count}|{Price}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
+                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{CmbDrink}|{ID}|{ID}|{Price}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
         }
         public static void LoadInfoGrade(DataGridView DgvOrders)
         {

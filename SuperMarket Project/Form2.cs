@@ -39,7 +39,7 @@ namespace SuperMarket_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Meals f7 = new Meals();
+            Menu f7 = new Menu();
             f7.Show();
             BtnOrder.BackColor = Color.SkyBlue;
             Cursor = Cursors.Default;
@@ -86,10 +86,19 @@ namespace SuperMarket_Project
 
         }
 
-     
-            
-        
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

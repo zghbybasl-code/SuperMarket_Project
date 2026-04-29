@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SuperMarket_Project
 {
-    public partial class Meals : Form
+    public partial class Menu : Form
     {
-        public Meals()
+        public Menu()
         {
             InitializeComponent();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
