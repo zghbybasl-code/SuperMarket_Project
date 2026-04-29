@@ -153,7 +153,7 @@ namespace SuperMarket_Project
         private void CmbSite_SelectedIndexChanged(object sender, EventArgs e)
         {// حاولت هنا برضوا
 
-            CmbSite.SelectedIndex = 0;
+   
         }
 
         private void Order_Load(object sender, EventArgs e)

@@ -72,7 +72,14 @@ namespace SuperMarket_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
+            File.WriteAllText("Customer.Txt",string.Empty);
             dgvCustomers.Rows.Clear();
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

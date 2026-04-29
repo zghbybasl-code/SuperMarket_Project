@@ -108,6 +108,7 @@ namespace SuperMarket_Project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            File.WriteAllText(("Support.Txt"), string.Empty);
             dgvSupport.Rows.Clear();
         }
     }
