@@ -160,7 +160,7 @@ namespace SuperMarket_Project
 
         private void Order_Load(object sender, EventArgs e)
         {//  هو طبعا هتلاقيه تحت خالصOrderLogic  ده تبع شفل الفايل هندل اسم الكلاس  
-            OrderLogic.LoadInfoGrade(DgvOrders);
+               OrderLogic.LoadInfoGrade(DgvOrders);
             //ده شفل Enum
             CmbMeal.DataSource = Enum.GetValues(typeof(MealsTybe));
             CmbDrink.DataSource = Enum.GetValues(typeof(DrinksTybe));
@@ -254,6 +254,11 @@ namespace SuperMarket_Project
         }
 
         private void DgvOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
 
         }

@@ -50,14 +50,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.DgvOrders = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.PriDrink = new System.Windows.Forms.TextBox();
-            this.IdDrink = new System.Windows.Forms.TextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +59,14 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.PriDrink = new System.Windows.Forms.TextBox();
+            this.IdDrink = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvOrders)).BeginInit();
@@ -82,9 +82,11 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.groupBox1.Location = new System.Drawing.Point(42, 12);
+            this.groupBox1.Location = new System.Drawing.Point(56, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(364, 226);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(485, 278);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Information";
@@ -92,9 +94,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 91);
+            this.label5.Location = new System.Drawing.Point(19, 112);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 17);
+            this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 12;
             this.label5.Text = "The Site";
             // 
@@ -115,18 +118,20 @@
             "Alexandria ",
             "Damietta ",
             "Cairo"});
-            this.CmbSite.Location = new System.Drawing.Point(81, 88);
+            this.CmbSite.Location = new System.Drawing.Point(108, 108);
+            this.CmbSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmbSite.Name = "CmbSite";
-            this.CmbSite.Size = new System.Drawing.Size(133, 24);
+            this.CmbSite.Size = new System.Drawing.Size(176, 28);
             this.CmbSite.TabIndex = 11;
             this.CmbSite.SelectedIndexChanged += new System.EventHandler(this.CmbSite_SelectedIndexChanged);
             // 
             // TxtName
             // 
             this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtName.Location = new System.Drawing.Point(81, 39);
+            this.TxtName.Location = new System.Drawing.Point(108, 48);
+            this.TxtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtName.Name = "TxtName";
-            this.TxtName.Size = new System.Drawing.Size(133, 23);
+            this.TxtName.Size = new System.Drawing.Size(176, 26);
             this.TxtName.TabIndex = 8;
             this.TxtName.TextChanged += new System.EventHandler(this.TxtName_TextChanged);
             // 
@@ -134,27 +139,30 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 39);
+            this.label1.Location = new System.Drawing.Point(28, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Name";
             // 
             // TxtID
             // 
             this.TxtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtID.Location = new System.Drawing.Point(140, 116);
+            this.TxtID.Location = new System.Drawing.Point(187, 143);
+            this.TxtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtID.Name = "TxtID";
-            this.TxtID.Size = new System.Drawing.Size(145, 23);
+            this.TxtID.Size = new System.Drawing.Size(192, 26);
             this.TxtID.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(56, 119);
+            this.label2.Location = new System.Drawing.Point(75, 146);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "ID Meals";
             // 
@@ -171,9 +179,11 @@
             this.groupBox2.Controls.Add(this.TxtCount);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.groupBox2.Location = new System.Drawing.Point(443, 12);
+            this.groupBox2.Location = new System.Drawing.Point(591, 15);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(398, 226);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(531, 278);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Choose Meals";
@@ -181,17 +191,19 @@
             // TxtPrice
             // 
             this.TxtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrice.Location = new System.Drawing.Point(140, 163);
+            this.TxtPrice.Location = new System.Drawing.Point(187, 201);
+            this.TxtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtPrice.Name = "TxtPrice";
-            this.TxtPrice.Size = new System.Drawing.Size(145, 23);
+            this.TxtPrice.Size = new System.Drawing.Size(192, 26);
             this.TxtPrice.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(56, 166);
+            this.label6.Location = new System.Drawing.Point(75, 204);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 17);
+            this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Meal Price";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -199,9 +211,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 68);
+            this.label3.Location = new System.Drawing.Point(43, 84);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.Size = new System.Drawing.Size(103, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = " MealCounts";
             // 
@@ -210,9 +223,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(6, 21);
+            this.label4.Location = new System.Drawing.Point(8, 26);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 17);
+            this.label4.Size = new System.Drawing.Size(146, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Choose Your Meal";
             // 
@@ -233,34 +247,38 @@
             " Philly Cheesesteak",
             " Chicken Pane With Pasta",
             " Beef Steak With Muchroom"});
-            this.CmbMeal.Location = new System.Drawing.Point(140, 18);
+            this.CmbMeal.Location = new System.Drawing.Point(187, 22);
+            this.CmbMeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmbMeal.Name = "CmbMeal";
-            this.CmbMeal.Size = new System.Drawing.Size(145, 24);
+            this.CmbMeal.Size = new System.Drawing.Size(192, 28);
             this.CmbMeal.TabIndex = 9;
             this.CmbMeal.SelectedIndexChanged += new System.EventHandler(this.CmbProduct_SelectedIndexChanged);
             // 
             // TxtCount
             // 
             this.TxtCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCount.Location = new System.Drawing.Point(140, 65);
+            this.TxtCount.Location = new System.Drawing.Point(187, 80);
+            this.TxtCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtCount.Name = "TxtCount";
-            this.TxtCount.Size = new System.Drawing.Size(145, 23);
+            this.TxtCount.Size = new System.Drawing.Size(192, 26);
             this.TxtCount.TabIndex = 7;
             // 
             // TxtCount2
             // 
             this.TxtCount2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCount2.Location = new System.Drawing.Point(125, 68);
+            this.TxtCount2.Location = new System.Drawing.Point(167, 84);
+            this.TxtCount2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtCount2.Name = "TxtCount2";
-            this.TxtCount2.Size = new System.Drawing.Size(145, 23);
+            this.TxtCount2.Size = new System.Drawing.Size(192, 26);
             this.TxtCount2.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 71);
+            this.label8.Location = new System.Drawing.Point(41, 87);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 17);
+            this.label8.Size = new System.Drawing.Size(93, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "DrinkCount";
             // 
@@ -279,9 +297,10 @@
             "Latte Cappuccino",
             "Hot Chocolate",
             "Water"});
-            this.CmbDrink.Location = new System.Drawing.Point(125, 22);
+            this.CmbDrink.Location = new System.Drawing.Point(167, 27);
+            this.CmbDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmbDrink.Name = "CmbDrink";
-            this.CmbDrink.Size = new System.Drawing.Size(145, 24);
+            this.CmbDrink.Size = new System.Drawing.Size(192, 28);
             this.CmbDrink.TabIndex = 15;
             this.CmbDrink.SelectedIndexChanged += new System.EventHandler(this.CmbDrink_SelectedIndexChanged);
             // 
@@ -289,9 +308,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(44, 22);
+            this.label7.Location = new System.Drawing.Point(59, 27);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
+            this.label7.Size = new System.Drawing.Size(64, 25);
             this.label7.TabIndex = 14;
             this.label7.Text = "drinks";
             // 
@@ -303,9 +323,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(288, 244);
+            this.button2.Location = new System.Drawing.Point(384, 300);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 48);
+            this.button2.Size = new System.Drawing.Size(257, 59);
             this.button2.TabIndex = 11;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
@@ -341,95 +362,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DgvOrders.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvOrders.GridColor = System.Drawing.Color.Black;
-            this.DgvOrders.Location = new System.Drawing.Point(59, 298);
+            this.DgvOrders.Location = new System.Drawing.Point(79, 367);
+            this.DgvOrders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DgvOrders.Name = "DgvOrders";
             this.DgvOrders.ReadOnly = true;
             this.DgvOrders.RowHeadersWidth = 51;
-            this.DgvOrders.Size = new System.Drawing.Size(1270, 239);
+            this.DgvOrders.Size = new System.Drawing.Size(1693, 294);
             this.DgvOrders.TabIndex = 2;
             this.DgvOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvOrders_CellContentClick);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(548, 544);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 41);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.button4.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(841, 244);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(189, 48);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.PriDrink);
-            this.groupBox3.Controls.Add(this.IdDrink);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.TxtCount2);
-            this.groupBox3.Controls.Add(this.CmbDrink);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(876, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(453, 226);
-            this.groupBox3.TabIndex = 12;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Choose Drink";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(32, 160);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 17);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Drink Price";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(51, 116);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 17);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "ID Drink";
-            // 
-            // PriDrink
-            // 
-            this.PriDrink.Location = new System.Drawing.Point(127, 157);
-            this.PriDrink.Name = "PriDrink";
-            this.PriDrink.Size = new System.Drawing.Size(143, 23);
-            this.PriDrink.TabIndex = 19;
-            // 
-            // IdDrink
-            // 
-            this.IdDrink.Location = new System.Drawing.Point(127, 113);
-            this.IdDrink.Name = "IdDrink";
-            this.IdDrink.Size = new System.Drawing.Size(143, 23);
-            this.IdDrink.TabIndex = 18;
             // 
             // Column1
             // 
@@ -476,6 +416,7 @@
             // Column8
             // 
             this.Column8.HeaderText = "IDDrink";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
@@ -493,12 +434,106 @@
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(731, 670);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(223, 50);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Exit";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.button4.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(1121, 300);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(252, 59);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Clear";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.PriDrink);
+            this.groupBox3.Controls.Add(this.IdDrink);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.TxtCount2);
+            this.groupBox3.Controls.Add(this.CmbDrink);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(1168, 15);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(604, 278);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Choose Drink";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(43, 197);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(93, 20);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Drink Price";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(68, 143);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(71, 20);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "ID Drink";
+            // 
+            // PriDrink
+            // 
+            this.PriDrink.Location = new System.Drawing.Point(169, 193);
+            this.PriDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PriDrink.Name = "PriDrink";
+            this.PriDrink.Size = new System.Drawing.Size(189, 26);
+            this.PriDrink.TabIndex = 19;
+            // 
+            // IdDrink
+            // 
+            this.IdDrink.Location = new System.Drawing.Point(169, 139);
+            this.IdDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdDrink.Name = "IdDrink";
+            this.IdDrink.Size = new System.Drawing.Size(189, 26);
+            this.IdDrink.TabIndex = 18;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // Order
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1407, 579);
+            this.ClientSize = new System.Drawing.Size(1876, 713);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
@@ -506,7 +541,7 @@
             this.Controls.Add(this.DgvOrders);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Order";
             this.Text = "Orders";
             this.Load += new System.EventHandler(this.Order_Load);
