@@ -91,10 +91,5 @@ namespace SuperMarket_Project
         
 
 
-        
-        private void label1_Click(object sender, EventArgs e) { }
-        private void Button3_Click(object sender, EventArgs e) { }
-        private void panel1_Paint(object sender, PaintEventArgs e) { }
-        private void Market_Load(object sender, EventArgs e) { }
     }
 }
