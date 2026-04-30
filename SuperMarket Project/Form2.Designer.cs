@@ -176,11 +176,11 @@
             // 
             // panel3
             // 
-            this.panel3.BackgroundImage = global::SuperMarket_Project.Properties.Resources.pexels_jorrynmorais_26076354;
+            this.panel3.BackgroundImage = global::SuperMarket_Project.Properties.Resources.tim_toomey_STqHLqMne3k_unsplash2;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1058, 477);
+            this.panel3.Size = new System.Drawing.Size(1038, 477);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 

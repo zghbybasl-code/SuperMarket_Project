@@ -161,5 +161,8 @@
   <ItemGroup>
     <None Include="Resources\tim-toomey-STqHLqMne3k-unsplash1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim-toomey-STqHLqMne3k-unsplash2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

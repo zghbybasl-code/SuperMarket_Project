@@ -181,5 +181,15 @@ namespace SuperMarket_Project.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tim_toomey_STqHLqMne3k_unsplash2 {
+            get {
+                object obj = ResourceManager.GetObject("tim-toomey-STqHLqMne3k-unsplash2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
