@@ -83,9 +83,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox1.Location = new System.Drawing.Point(56, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(485, 278);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -119,7 +119,7 @@
             "Damietta ",
             "Cairo"});
             this.CmbSite.Location = new System.Drawing.Point(108, 108);
-            this.CmbSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbSite.Margin = new System.Windows.Forms.Padding(4);
             this.CmbSite.Name = "CmbSite";
             this.CmbSite.Size = new System.Drawing.Size(176, 28);
             this.CmbSite.TabIndex = 11;
@@ -129,7 +129,7 @@
             // 
             this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtName.Location = new System.Drawing.Point(108, 48);
-            this.TxtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtName.Margin = new System.Windows.Forms.Padding(4);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(176, 26);
             this.TxtName.TabIndex = 8;
@@ -150,7 +150,7 @@
             // 
             this.TxtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtID.Location = new System.Drawing.Point(187, 143);
-            this.TxtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtID.Margin = new System.Windows.Forms.Padding(4);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(192, 26);
             this.TxtID.TabIndex = 6;
@@ -180,9 +180,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox2.Location = new System.Drawing.Point(591, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(531, 278);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -192,7 +192,7 @@
             // 
             this.TxtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPrice.Location = new System.Drawing.Point(187, 201);
-            this.TxtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(192, 26);
             this.TxtPrice.TabIndex = 13;
@@ -248,7 +248,7 @@
             " Chicken Pane With Pasta",
             " Beef Steak With Muchroom"});
             this.CmbMeal.Location = new System.Drawing.Point(187, 22);
-            this.CmbMeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbMeal.Margin = new System.Windows.Forms.Padding(4);
             this.CmbMeal.Name = "CmbMeal";
             this.CmbMeal.Size = new System.Drawing.Size(192, 28);
             this.CmbMeal.TabIndex = 9;
@@ -258,7 +258,7 @@
             // 
             this.TxtCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCount.Location = new System.Drawing.Point(187, 80);
-            this.TxtCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCount.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCount.Name = "TxtCount";
             this.TxtCount.Size = new System.Drawing.Size(192, 26);
             this.TxtCount.TabIndex = 7;
@@ -267,7 +267,7 @@
             // 
             this.TxtCount2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCount2.Location = new System.Drawing.Point(167, 84);
-            this.TxtCount2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCount2.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCount2.Name = "TxtCount2";
             this.TxtCount2.Size = new System.Drawing.Size(192, 26);
             this.TxtCount2.TabIndex = 17;
@@ -298,7 +298,7 @@
             "Hot Chocolate",
             "Water"});
             this.CmbDrink.Location = new System.Drawing.Point(167, 27);
-            this.CmbDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbDrink.Margin = new System.Windows.Forms.Padding(4);
             this.CmbDrink.Name = "CmbDrink";
             this.CmbDrink.Size = new System.Drawing.Size(192, 28);
             this.CmbDrink.TabIndex = 15;
@@ -324,7 +324,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(384, 300);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(257, 59);
             this.button2.TabIndex = 11;
@@ -363,7 +363,7 @@
             this.DgvOrders.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvOrders.GridColor = System.Drawing.Color.Black;
             this.DgvOrders.Location = new System.Drawing.Point(79, 367);
-            this.DgvOrders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvOrders.Margin = new System.Windows.Forms.Padding(4);
             this.DgvOrders.Name = "DgvOrders";
             this.DgvOrders.ReadOnly = true;
             this.DgvOrders.RowHeadersWidth = 51;
@@ -442,7 +442,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(731, 670);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(223, 50);
             this.button3.TabIndex = 3;
@@ -458,7 +458,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(1121, 300);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(252, 59);
             this.button4.TabIndex = 4;
@@ -480,9 +480,9 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(1168, 15);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(604, 278);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
@@ -511,7 +511,7 @@
             // PriDrink
             // 
             this.PriDrink.Location = new System.Drawing.Point(169, 193);
-            this.PriDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PriDrink.Margin = new System.Windows.Forms.Padding(4);
             this.PriDrink.Name = "PriDrink";
             this.PriDrink.Size = new System.Drawing.Size(189, 26);
             this.PriDrink.TabIndex = 19;
@@ -519,7 +519,7 @@
             // IdDrink
             // 
             this.IdDrink.Location = new System.Drawing.Point(169, 139);
-            this.IdDrink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdDrink.Margin = new System.Windows.Forms.Padding(4);
             this.IdDrink.Name = "IdDrink";
             this.IdDrink.Size = new System.Drawing.Size(189, 26);
             this.IdDrink.TabIndex = 18;
@@ -533,7 +533,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1876, 713);
+            this.ClientSize = new System.Drawing.Size(1876, 748);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);

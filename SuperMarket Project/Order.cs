@@ -197,7 +197,7 @@ namespace SuperMarket_Project
 
         private void CmbDrink_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DrinksTybe Selected=(DrinksTybe)CmbDrink.SelectedItem;
+            DrinksTybe Selected = (DrinksTybe)CmbDrink.SelectedItem;
             int ID = 0;
             double Price = 0;
             switch (Selected)
@@ -291,10 +291,8 @@ namespace SuperMarket_Project
                 string[] Rows = File.ReadAllLines("orders.txt");
                 foreach (string s in Rows)
                 {
-                    string[] data = s.Split('|');//هنا بنستثني دي من الكتابه الفوق |
-
-                    DgvOrders.Rows.Add(data);//دي لازم تتعمب علشان الفايل يحط بيناته في الجدول
-
+                    string[] data = s.Split('|');
+                    DgvOrders.Rows.Add(data);
 
                 }
 

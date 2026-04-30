@@ -191,5 +191,35 @@ namespace SuperMarket_Project.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_11_26_at_12_38_28_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-11-26 at 12.38.28 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_11_26_at_12_40_15_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-11-26 at 12.40.15 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_11_26_at_12_401 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-11-26 at 12.401", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
