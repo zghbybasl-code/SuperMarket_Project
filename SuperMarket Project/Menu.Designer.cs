@@ -138,12 +138,15 @@
             // 
             // listBox2
             // 
-            this.listBox2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.listBox2.BackColor = System.Drawing.Color.Black;
+            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.ForeColor = System.Drawing.Color.White;
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(27, 86);
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(26, 32);
             this.listBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(174, 69);
+            this.listBox2.Size = new System.Drawing.Size(173, 116);
             this.listBox2.TabIndex = 8;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
