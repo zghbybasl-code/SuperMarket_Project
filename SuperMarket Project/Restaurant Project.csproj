@@ -173,5 +173,8 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2025-11-26 at 12.38.28 PM.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
