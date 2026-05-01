@@ -69,7 +69,7 @@ namespace SuperMarket_Project
         {
             MessageBox.Show("Are you sure you want to Exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
            
-                this.Close();
+                this.Close();   
                 Application.Exit();
             
 
