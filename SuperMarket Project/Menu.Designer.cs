@@ -146,7 +146,7 @@
             this.listBox2.ForeColor = System.Drawing.Color.White;
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 20;
-            this.listBox2.Location = new System.Drawing.Point(117, 47);
+            this.listBox2.Location = new System.Drawing.Point(103, 26);
             this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(308, 304);
@@ -243,6 +243,7 @@
             this.buttonmoltencake.TabIndex = 17;
             this.buttonmoltencake.Text = "مولتن كيك - 85";
             this.buttonmoltencake.UseVisualStyleBackColor = true;
+            this.buttonmoltencake.Click += new System.EventHandler(this.buttonmoltencake_Click);
             // 
             // buttonfrize
             // 

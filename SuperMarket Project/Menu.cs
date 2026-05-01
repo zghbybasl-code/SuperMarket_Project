@@ -101,6 +101,11 @@ namespace SuperMarket_Project
         {
             this.Close();
         }
+
+        private void buttonmoltencake_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }
 
