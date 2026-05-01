@@ -176,5 +176,15 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Meals\burger.jpg.jpeg" />
+    <Content Include="bin\Debug\Meals\chacken Panea with pasta.jpg.jpeg" />
+    <Content Include="bin\Debug\Meals\double peef burger.jpg.jpeg" />
+    <Content Include="bin\Debug\Meals\pasta.jpg.jpeg" />
+    <Content Include="bin\Debug\Meals\pateto and cheese sandwich.jpg.jpeg" />
+    <Content Include="bin\Debug\Meals\Pizza.jpg.jpeg" />
+    <Content Include="bin\Debug\Meals\shawarma.jpg.jpeg" />
+    <Content Include="bin\Debug\Meals\zenger burger.jpg.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

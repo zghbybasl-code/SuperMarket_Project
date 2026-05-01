@@ -91,6 +91,11 @@ namespace SuperMarket_Project
                 MessageBox.Show("من فضلك أضف وجبات للسلة أولاً!");
             }
         }
+
+        private void labelTotal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
