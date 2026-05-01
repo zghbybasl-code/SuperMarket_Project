@@ -105,6 +105,7 @@ namespace SuperMarket_Project
         private void button3_Click(object sender, EventArgs e)
         {//ده زرار قفل للفورم
             this.Close();
+
         }
 
         private void button4_Click(object sender, EventArgs e)

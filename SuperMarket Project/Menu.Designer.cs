@@ -49,10 +49,10 @@
             // 
             // buttonburger
             // 
-            this.buttonburger.Location = new System.Drawing.Point(471, 120);
-            this.buttonburger.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonburger.Location = new System.Drawing.Point(628, 148);
+            this.buttonburger.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonburger.Name = "buttonburger";
-            this.buttonburger.Size = new System.Drawing.Size(75, 23);
+            this.buttonburger.Size = new System.Drawing.Size(100, 28);
             this.buttonburger.TabIndex = 0;
             this.buttonburger.Text = "برجر - 145";
             this.buttonburger.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@
             // 
             // buttonPizza
             // 
-            this.buttonPizza.Location = new System.Drawing.Point(265, 120);
-            this.buttonPizza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonPizza.Location = new System.Drawing.Point(353, 148);
+            this.buttonPizza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonPizza.Name = "buttonPizza";
-            this.buttonPizza.Size = new System.Drawing.Size(72, 23);
+            this.buttonPizza.Size = new System.Drawing.Size(96, 28);
             this.buttonPizza.TabIndex = 1;
             this.buttonPizza.Text = "بيتزا - 170";
             this.buttonPizza.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
             // 
             // buttonPasta
             // 
-            this.buttonPasta.Location = new System.Drawing.Point(471, 241);
-            this.buttonPasta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonPasta.Location = new System.Drawing.Point(628, 297);
+            this.buttonPasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonPasta.Name = "buttonPasta";
-            this.buttonPasta.Size = new System.Drawing.Size(75, 25);
+            this.buttonPasta.Size = new System.Drawing.Size(100, 31);
             this.buttonPasta.TabIndex = 2;
             this.buttonPasta.Text = "باستا - 180";
             this.buttonPasta.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // 
             // buttonDesert
             // 
-            this.buttonDesert.Location = new System.Drawing.Point(265, 241);
-            this.buttonDesert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDesert.Location = new System.Drawing.Point(353, 297);
+            this.buttonDesert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDesert.Name = "buttonDesert";
-            this.buttonDesert.Size = new System.Drawing.Size(72, 25);
+            this.buttonDesert.Size = new System.Drawing.Size(96, 31);
             this.buttonDesert.TabIndex = 3;
             this.buttonDesert.Text = "تشيز كيك - 156";
             this.buttonDesert.UseVisualStyleBackColor = true;
@@ -94,10 +94,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(455, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(607, 26);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(137, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -105,10 +105,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(242, 21);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(323, 26);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(122, 89);
+            this.pictureBox2.Size = new System.Drawing.Size(163, 110);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -116,10 +116,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(455, 158);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(607, 194);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(102, 80);
+            this.pictureBox3.Size = new System.Drawing.Size(136, 98);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -128,10 +128,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(242, 158);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(323, 194);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(117, 80);
+            this.pictureBox4.Size = new System.Drawing.Size(156, 98);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
@@ -142,11 +142,11 @@
             this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2.ForeColor = System.Drawing.Color.White;
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(26, 32);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox2.ItemHeight = 20;
+            this.listBox2.Location = new System.Drawing.Point(35, 39);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(173, 116);
+            this.listBox2.Size = new System.Drawing.Size(229, 164);
             this.listBox2.TabIndex = 8;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
@@ -156,10 +156,10 @@
             this.labelTotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotal.ForeColor = System.Drawing.Color.White;
-            this.labelTotal.Location = new System.Drawing.Point(68, 171);
-            this.labelTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelTotal.Location = new System.Drawing.Point(91, 210);
+            this.labelTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(87, 32);
+            this.labelTotal.Size = new System.Drawing.Size(116, 39);
             this.labelTotal.TabIndex = 9;
             this.labelTotal.Text = "total : 0";
             this.labelTotal.UseVisualStyleBackColor = false;
@@ -171,10 +171,10 @@
             this.buttonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOrder.ForeColor = System.Drawing.Color.White;
-            this.buttonOrder.Location = new System.Drawing.Point(41, 218);
-            this.buttonOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonOrder.Location = new System.Drawing.Point(55, 268);
+            this.buttonOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOrder.Name = "buttonOrder";
-            this.buttonOrder.Size = new System.Drawing.Size(141, 34);
+            this.buttonOrder.Size = new System.Drawing.Size(188, 42);
             this.buttonOrder.TabIndex = 10;
             this.buttonOrder.Text = "Order Now";
             this.buttonOrder.UseVisualStyleBackColor = false;
@@ -186,9 +186,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(52, 275);
+            this.button1.Location = new System.Drawing.Point(69, 338);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 33);
+            this.button1.Size = new System.Drawing.Size(137, 41);
             this.button1.TabIndex = 11;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = false;
@@ -196,10 +197,10 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(638, 366);
+            this.ClientSize = new System.Drawing.Size(851, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonOrder);
             this.Controls.Add(this.labelTotal);
@@ -212,7 +213,7 @@
             this.Controls.Add(this.buttonPasta);
             this.Controls.Add(this.buttonPizza);
             this.Controls.Add(this.buttonburger);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
