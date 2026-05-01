@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,11 +47,12 @@ namespace SuperMarket_Project
             neworder.ID = TxtID.Text;
             neworder.CmbMeal = CmbMeal.Text;
             neworder.Count = TxtCount.Text;
-            neworder.Price = TxtPrice.Text;
+            neworder.PriceMeal = TxtPrice.Text;
             neworder.cmbSite = CmbSite.Text;
             neworder.CmbDrink = CmbDrink.Text;
             neworder.TxtCount2 = TxtCount2.Text;
-            neworder.IDDrink=IdDrink.Text;
+            neworder.IDDrink = IdDrink.Text;
+            
             neworder.savefile();
 
             //Data Grade View 
@@ -63,7 +65,8 @@ namespace SuperMarket_Project
             string Count2 = TxtCount2.Text;
             string Drink = CmbDrink.Text;
             string IDDrink = IdDrink.Text;
-            DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, Count2, ID,IDDrink, Price);
+
+            DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, Count2, ID, IDDrink );
             MessageBox.Show("The Order Added Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             TxtName.Clear();
             TxtCount.Clear();
@@ -88,9 +91,9 @@ namespace SuperMarket_Project
 
         private void button4_Click(object sender, EventArgs e)
         {   //ده بيمسح بينات الجدول انا مسميه DgvOrders
-            File.WriteAllText("orders.txt",string.Empty);
+            File.WriteAllText("orders.txt", string.Empty);
             DgvOrders.Rows.Clear();
-          
+
         }
 
         private void CmbProduct_SelectedIndexChanged(object sender, EventArgs e)
@@ -155,16 +158,16 @@ namespace SuperMarket_Project
         private void CmbSite_SelectedIndexChanged(object sender, EventArgs e)
         {// حاولت هنا برضوا
 
-   
+
         }
 
         private void Order_Load(object sender, EventArgs e)
         {//  هو طبعا هتلاقيه تحت خالصOrderLogic  ده تبع شفل الفايل هندل اسم الكلاس  
-               OrderLogic.LoadInfoGrade(DgvOrders);
+            OrderLogic.LoadInfoGrade(DgvOrders);
             //ده شفل Enum
             CmbMeal.DataSource = Enum.GetValues(typeof(MealsTybe));
             CmbDrink.DataSource = Enum.GetValues(typeof(DrinksTybe));
-            
+
         }
 
         private void TxtName_TextChanged(object sender, EventArgs e)
@@ -214,11 +217,11 @@ namespace SuperMarket_Project
                     break;
                 case
                     DrinksTybe.Green_tea:
-                    Price = 20;  ID = 214543555;
+                    Price = 20; ID = 214543555;
                     break;
                 case
                     DrinksTybe.Mango_juice:
-                    Price = 15;  ID = 55433254;
+                    Price = 15; ID = 55433254;
                     break;
 
                 case
@@ -235,19 +238,19 @@ namespace SuperMarket_Project
                     break;
                 case
                     DrinksTybe.Hot_Chocolate:
-                    Price = 50;   ID = 53534324;
+                    Price = 50; ID = 53534324;
                     break;
-             
-                    
+
+
                 case
                     DrinksTybe.Water:
-                    Price = 10;  ID = 453565254;
+                    Price = 10; ID = 453565254;
                     break;
 
 
 
             }
-            IdDrink.Text =ID.ToString(); 
+            IdDrink.Text = ID.ToString();
             PriDrink.Text = Price.ToString();
 
 
@@ -268,19 +271,20 @@ namespace SuperMarket_Project
         public string Name { get; set; }
         public string ID { get; set; }
         public string Count { get; set; }
-        public string Price { get; set; }
+        public string PriceMeal { get; set; }
         public string cmbSite { get; set; }
         public string CmbMeal { get; set; }
         public string CmbDrink { get; set; }
         public string TxtCount2 { get; set; }
-        public string IDDrink {  get; set; }
+        public string IDDrink { get; set; }
+        public int totalPrice { get; set; }
 
         public void savefile()//دي الداله احنا هننشيء فيها فايل الهنخزن فيه كل حاجه  تبع الجدول
         {
 
             using (StreamWriter Writer = new StreamWriter("orders.txt", true))
 
-                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{CmbDrink}|{ID}|{ID}|{Price}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
+                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{CmbDrink}|{ID}|{IDDrink}|{totalPrice}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
         }
         public static void LoadInfoGrade(DataGridView DgvOrders)
         {
@@ -341,14 +345,11 @@ namespace SuperMarket_Project
 
 
 
-    }
-    
-   
-
 
 
 
     }
 
 
+}
 
