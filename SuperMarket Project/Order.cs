@@ -42,6 +42,22 @@ namespace SuperMarket_Project
                 return;
 
             }
+            //Data Grade View 
+            string Name = TxtName.Text;
+            string Site = CmbSite.Text.ToString();
+            string Meals = CmbMeal.Text.ToString();
+            string ID = TxtID.Text;
+            string CountMeals = TxtCount.Text;
+            string CountDrink = TxtCount2.Text;
+            string CountD = TxtCount2.Text;
+            string Drink = CmbDrink.Text;
+            string IDDrink = IdDrink.Text;
+            double MealP = 0; int MealC = 0; double DrinkP = 0; int DrinkC = 0;
+            double.TryParse(TxtPrice.Text, out MealP);
+            int.TryParse(TxtCount.Text, out MealC);
+            double.TryParse(TxtCount2.Text, out DrinkP);
+            int.TryParse(TxtCount2.Text, out DrinkC);
+            double TotalPrice = MealP * MealC + DrinkP * DrinkC;
             //File Handling
             OrderLogic neworder = new OrderLogic();
             neworder.Name = TxtName.Text;
@@ -53,35 +69,29 @@ namespace SuperMarket_Project
             neworder.CmbDrink = CmbDrink.Text;
             neworder.TxtCount2 = TxtCount2.Text;
             neworder.IDDrink = IdDrink.Text;
-
-            
+            neworder.TotalPrice = TotalPrice;
             neworder.savefile();
+           
+        
 
-            //Data Grade View 
-            string Name = TxtName.Text;
-            string Site = CmbSite.Text.ToString();
-            string Meals = CmbMeal.Text.ToString();
-            string ID = TxtID.Text;
-            string CountMeals = TxtCount.Text;
-            string Price = TxtPrice.Text;
-            string CountD = TxtCount2.Text;
-            string Drink = CmbDrink.Text;
-            string IDDrink = IdDrink.Text;
-            double MealP = 0;  int MealC = 0; double DrinkP = 0; int DrinkC = 0;
-            double.TryParse(TxtPrice.Text,out MealP);
-            int.TryParse(TxtCount.Text,out MealC);
-            double.TryParse(TxtCount2.Text,out DrinkP);
-            int.TryParse(TxtCount2.Text,out DrinkC);
-            double TotalPrice = MealP * MealC + DrinkP * DrinkC; 
+
+
+          
+
+
+
             
+
             DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, CountD, ID, IDDrink,TotalPrice);
+
+       
+
             MessageBox.Show("The Order Added Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             TxtName.Clear();
             TxtCount.Clear();
             TxtPrice.Clear();
             TxtID.Clear();
             TxtName.Focus();
-
 
 
 
@@ -294,14 +304,16 @@ namespace SuperMarket_Project
         public string CmbDrink { get; set; }
         public string TxtCount2 { get; set; }
         public string IDDrink { get; set; }
-        public int totalPrice { get; set; }
+        public double TotalPrice { get; set; }
+        
+        
 
         public void savefile()//دي الداله احنا هننشيء فيها فايل الهنخزن فيه كل حاجه  تبع الجدول
         {
 
             using (StreamWriter Writer = new StreamWriter("orders.txt", true))
 
-                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{CmbDrink}|{ID}|{IDDrink}|{totalPrice}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
+                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{TxtCount2}|{ID}|{IDDrink}|{TotalPrice}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
         }
         public static void LoadInfoGrade(DataGridView DgvOrders)
         {
