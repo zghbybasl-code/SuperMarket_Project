@@ -313,7 +313,7 @@ namespace SuperMarket_Project
 
             using (StreamWriter Writer = new StreamWriter("orders.txt", true))
 
-                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{TxtCount2}|{ID}|{IDDrink}|{TotalPrice}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
+                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{CmbDrink}|{TxtCount2}|{ID}|{IDDrink}|{TotalPrice}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
         }
         public static void LoadInfoGrade(DataGridView DgvOrders)
         {
