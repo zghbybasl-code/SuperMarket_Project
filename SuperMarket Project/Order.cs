@@ -17,6 +17,7 @@ namespace SuperMarket_Project
     {
         public Order()
         {
+        
             InitializeComponent();
         }
 
@@ -41,6 +42,22 @@ namespace SuperMarket_Project
                 return;
 
             }
+            //Data Grade View 
+            string Name = TxtName.Text;
+            string Site = CmbSite.Text.ToString();
+            string Meals = CmbMeal.Text.ToString();
+            string ID = TxtID.Text;
+            string CountMeals = TxtCount.Text;
+            string CountDrink = TxtCount2.Text;
+            string CountD = TxtCount2.Text;
+            string Drink = CmbDrink.Text;
+            string IDDrink = IdDrink.Text;
+            double MealP = 0; int MealC = 0; double DrinkP = 0; int DrinkC = 0;
+            double.TryParse(TxtPrice.Text, out MealP);
+            int.TryParse(TxtCount.Text, out MealC);
+            double.TryParse(TxtCount2.Text, out DrinkP);
+            int.TryParse(TxtCount2.Text, out DrinkC);
+            double TotalPrice = MealP * MealC + DrinkP * DrinkC;
             //File Handling
             OrderLogic neworder = new OrderLogic();
             neworder.Name = TxtName.Text;
@@ -52,28 +69,29 @@ namespace SuperMarket_Project
             neworder.CmbDrink = CmbDrink.Text;
             neworder.TxtCount2 = TxtCount2.Text;
             neworder.IDDrink = IdDrink.Text;
-            
+            neworder.TotalPrice = TotalPrice;
             neworder.savefile();
+           
+        
 
-            //Data Grade View 
-            string Name = TxtName.Text;
-            string Site = CmbSite.Text.ToString();
-            string Meals = CmbMeal.Text.ToString();
-            string ID = TxtID.Text;
-            string CountMeals = TxtCount.Text;
-            string Price = TxtPrice.Text;
-            string Count2 = TxtCount2.Text;
-            string Drink = CmbDrink.Text;
-            string IDDrink = IdDrink.Text;
 
-            DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, Count2, ID, IDDrink );
+
+          
+
+
+
+            
+
+            DgvOrders.Rows.Add(Name, Site, Meals, CountMeals, Drink, CountD, ID, IDDrink,TotalPrice);
+
+       
+
             MessageBox.Show("The Order Added Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             TxtName.Clear();
             TxtCount.Clear();
             TxtPrice.Clear();
             TxtID.Clear();
             TxtName.Focus();
-
 
 
 
@@ -104,48 +122,57 @@ namespace SuperMarket_Project
                 MealsTybe Selected = (MealsTybe)CmbMeal.SelectedItem;
                 int ID = 0;
                 double Price = 0;
+                
                 switch (Selected)
                 {
                     case
                         MealsTybe.Chicken_Crepe:
                         Price = 120.50; ID = 13432144;
+                        
+
                         break;
                     case
                         MealsTybe.Beef_Steak_With_Muchroom:
                         Price = 200; ID = 876575756;
+                        
                         break;
                     case
                         MealsTybe.Chicken_Pane_With_Pasta:
                         Price = 150; ID = 543243543;
+                        
                         break;
                     case
                         MealsTybe.Zinger_Burger:
                         Price = 300; ID = 345235253;
+                  
                         break;
                     case
                         MealsTybe.Pizza:
                         Price = 100; ID = 23432453;
+                       
                         break;
                     case
                         MealsTybe.Double_Beef_Burger:
                         Price = 200; ID = 53424325;
+                       
                         break;
 
                     case
                         MealsTybe.Crispy_Chicken_Sandwich:
                         Price = 250; ID = 23576876;
+                        
                         break;
                     case
                         MealsTybe.Burger:
                         Price = 150; ID = 25342354;
+                       
                         break;
 
 
                 }
                 TxtID.Text = ID.ToString();
                 TxtPrice.Text = Price.ToString();
-
-
+             
 
             }
 
@@ -277,14 +304,16 @@ namespace SuperMarket_Project
         public string CmbDrink { get; set; }
         public string TxtCount2 { get; set; }
         public string IDDrink { get; set; }
-        public int totalPrice { get; set; }
+        public double TotalPrice { get; set; }
+        
+        
 
         public void savefile()//دي الداله احنا هننشيء فيها فايل الهنخزن فيه كل حاجه  تبع الجدول
         {
 
             using (StreamWriter Writer = new StreamWriter("orders.txt", true))
 
-                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{CmbDrink}|{ID}|{IDDrink}|{totalPrice}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
+                Writer.WriteLine($"{Name}|{cmbSite}|{CmbMeal}|{Count}|{CmbDrink}|{TxtCount2}|{ID}|{IDDrink}|{TotalPrice}");//هنا لازم نرسس كل حاجه بنفس ترتيب الجدول
         }
         public static void LoadInfoGrade(DataGridView DgvOrders)
         {

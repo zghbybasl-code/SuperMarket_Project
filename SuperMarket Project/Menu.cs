@@ -92,49 +92,17 @@ namespace SuperMarket_Project
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        
+        private void labelTotal_Click(object sender, EventArgs e)
         {
-            listBox2.Items.Add("مولتن كيك - 85");
-            total += 85;
-            labelTotal.Text = "Total: " + total + " EGP";
-        }
-        
 
-        private void buttonfrize_Click(object sender, EventArgs e)
-        
-            
-        {
-            listBox2.Items.Add("بطاطس مقلية - 40");
-            total += 40;
-            labelTotal.Text = "Total: " + total + " EGP";
         }
 
-        private void buttonjuicemango_Click(object sender, EventArgs e)
-        
-            
+        private void button1_Click(object sender, EventArgs e)
         {
-            listBox2.Items.Add("عصير مانجو - 50");
-            total += 50;
-            labelTotal.Text = "Total: " + total + " EGP";
-        }
-
-        private void buttonjuicestreb_Click(object sender, EventArgs e)
-        
-            
-        {
-           
-            listBox2.Items.Add("عصير فراولة - 45");
-
-            // تحديث الإجمالي
-            total += 45;
-            labelTotal.Text = "Total: " + total + " EGP";
+            this.Close();
         }
     }
-    }
-    
-   
-
+}
 
        
 
